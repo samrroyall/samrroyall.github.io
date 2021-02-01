@@ -1,0 +1,11 @@
+article {
+    width: 100%;
+    padding: 30px 60px;
+    border-top: 1px solid var(--light-color);
+}
+article img {
+    display: block;
+    margin: 40px auto;
+    border: 4px solid var(--light-color)
+}
+article p { padding: 20px 30px; }

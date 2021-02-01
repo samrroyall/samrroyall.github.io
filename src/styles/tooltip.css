@@ -1,0 +1,20 @@
+.tooltip {
+    background-color: rgb(45, 179, 127);
+    color: var(--text-color);
+    position: absolute;
+    margin: -75px 0 0 -12px;
+    padding: 0px 10px 8px;
+    border-radius: 5px;
+    z-index: 800;
+}
+.tooltip::after {
+    content: "";
+    position: absolute;
+    margin: 54% 0% 0 -40%;
+    border-style: solid;
+    border-color: rgb(45, 179, 127) transparent transparent transparent;
+}
+.display {
+    font-size: 14px;
+    font-weight: 600;
+}
