@@ -15,7 +15,7 @@ class Tooltip extends React.Component {
 
     handleClick() {
         this.setState({ hidden: false });
-        navigator.clipboard.writeText(this.props.copyText);
+        navigator.clipboard.writeText(this.props.copyText); // write tooltip text to clipboard
         setTimeout(this.hide, 800);
     }
 

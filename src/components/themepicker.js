@@ -5,24 +5,30 @@ import "../styles/themepicker.css"
 class ThemePicker extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { 
-            theme: document.documentElement.style.getPropertyValue("--theme")
-        };
+        if (typeof document !== `undefined` ) {
+            var currTheme = document.documentElement.style.getPropertyValue("--theme");
+        } else {
+            var currTheme = "alpine";
+        }
+        this.state = { theme: currTheme };
         this.changeTheme = this.changeTheme.bind(this);
     }
 
     changeTheme(e) {
-        var newTheme = e.target.value;
-        this.setState({theme: newTheme});
-        var colors = themes[newTheme];
-        document.documentElement.style.setProperty("--theme", newTheme);
-        document.documentElement.style.setProperty("--primary-color", colors.primary);
-        document.documentElement.style.setProperty("--light-color", colors.light);
-        document.documentElement.style.setProperty("--dark-color", colors.dark);
-        if (colors.hasOwnProperty("text")) {
-            document.documentElement.style.setProperty("--text-color", colors.text);
-        } else {
-            document.documentElement.style.setProperty("--text-color", "#ffffff");
+        if (typeof document !== `undefined`) {
+            var newTheme = e.target.value; 
+            this.setState({theme: newTheme}); // update state with new theme
+            var colors = themes[newTheme]; // get new theme's color values
+            // set color values
+            document.documentElement.style.setProperty("--theme", newTheme);
+            document.documentElement.style.setProperty("--primary-color", colors.primary);
+            document.documentElement.style.setProperty("--light-color", colors.light);
+            document.documentElement.style.setProperty("--dark-color", colors.dark);
+            if (colors.hasOwnProperty("text")) {
+                document.documentElement.style.setProperty("--text-color", colors.text);
+            } else {
+                document.documentElement.style.setProperty("--text-color", "#ffffff");
+            }
         }
     }
 
