@@ -21,7 +21,7 @@ export default function Home() {
               <Entry
                 title="University of Chicago"
                 subtitle="BS Computer Science, BA Philosophy"
-                date="10/15-6/19"
+                date={<span>Oct. '15 -<br/>Jun. '19</span>}
                 content={
                   < >
                     <ul>
@@ -38,6 +38,7 @@ export default function Home() {
                 title="Coding Dojo"
                 subtitle="Full-time Software Engineering Bootcamp"
                 date="1/21-5/21"
+                date={<span>Jan. '21 -<br/>May '21</span>}
                 content={
                   <ul>
                     <li> GPA/Grades: ???</li>
@@ -62,21 +63,21 @@ export default function Home() {
               <Entry
                 title="Stroz Friedberg"
                 subtitle="Consultant, Digital Forensics/Incident Response"
-                date="6/20-12/20"
+                date={<span>Jun. '20 -<br/>Dec. '20</span>}
                 content="Default description Default description Default description 
                 Default description Default description Default description Default description."
               />
               <Entry
                 title="Stroz Friedberg"
                 subtitle="Cyber Associate"
-                date="8/19-5/20"
+                date={<span>Aug. '19 -<br/>May '20</span>}
                 content="Default description Default description Default description 
                 Default description Default description Default description Default description."
               />
               <Entry
                 title="Stroz Friedberg"
                 subtitle="Cyber Summer Associate"
-                date="6/18-8/18"
+                date={<span>Jun. '18 -<br/>Aug '17</span>}
                 content="Default description Default description Default description 
                 Default description Default description Default description Default description."
               />
@@ -84,6 +85,7 @@ export default function Home() {
                 title="Tiber Solutions"
                 subtitle="Database Intern"
                 date="6/17-9/17"
+                date={<span>Jun. '17 -<br/>Sep. '17</span>}
                 content="Default description Default description Default description 
                 Default description Default description Default description Default description."
               />

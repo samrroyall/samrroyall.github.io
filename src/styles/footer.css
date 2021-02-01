@@ -10,7 +10,6 @@ footer {
 }
 #socials-list {
     display: flex;
-    font-size: 24px;
     justify-content: center;
     padding: 0 0 15px;
 } 
@@ -25,13 +24,14 @@ footer {
 }
 #socials-list .c-icon:hover { fill: var(--light-color); }
 #powered-by { 
-    padding: 30px 0 0; 
+    padding: 20px 0 0; 
     display: flex;
     height: 30px;
     justify-content: center;
 }
 #powered-by span { margin-right: 5px; }
 #powered-by .c-icon { 
+    vertical-align: top;
     margin: 0 3px;
     fill: var(--text-color); 
 }

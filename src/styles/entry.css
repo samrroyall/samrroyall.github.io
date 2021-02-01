@@ -1,7 +1,5 @@
 .head {
-    width: 100%;
-    margin: 0 20px;
-    padding: 5px;
+    width: 91%;
     border-left: 5px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
     display: flex;
@@ -15,21 +13,25 @@
 }
 .subtitle {
     font-style: italic;
-    font-size: 14px;
+    font-size: .65em;
 }
 .date {
-    font-weight: 600;
+    min-width: 50px;
+    padding: 10px 0;
+    font-size: .55em;
+    text-align: right;
 }
 .body {
     width: 100%;
-    padding: 20px 60px;
+    padding: 20px 5%;
     text-align: left;
-    font-size: 13px;
+    font-size: .8em;
 }
 .body ul {
-    margin: 0 30px;
+    margin: 0 2%;
     list-style-type: disc;
 }
 .body ul ul {
+    margin-left: 7%;
     list-style-type: circle;
 }

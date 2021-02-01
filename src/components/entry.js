@@ -16,11 +16,11 @@ class Entry extends React.Component {
         return (
             <>
                 <div className="head text-light" onClick={ this.handleClick }>
-                    <span>
+                    <div>
                         <h2>{this.props.title}</h2>
                         <span className="subtitle">{this.props.subtitle}</span>
-                    </span>
-                    <span className="date">{this.props.date}</span>
+                    </div>
+                    <div className="date">{this.props.date}</div>
                 </div>
                 <div className={this.state.hidden ? "body hide" : "body"}>
                     {this.props.content}
