@@ -2,6 +2,7 @@ import React from "react"
 
 const sqlite = (
     <svg version="1.0" 
+        className="icon"
         xmlns="http://www.w3.org/2000/svg"
         width="32px"  
         height="32px" 
