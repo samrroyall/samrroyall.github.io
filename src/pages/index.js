@@ -77,7 +77,7 @@ export default function Home() {
               <Entry
                 title="Stroz Friedberg"
                 subtitle="Cyber Summer Associate"
-                date={<span>Jun. '18 -<br/>Aug '17</span>}
+                date={<span>Jun. '18 -<br/>Aug '18</span>}
                 content="Default description Default description Default description 
                 Default description Default description Default description Default description."
               />
