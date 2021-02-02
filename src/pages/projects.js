@@ -6,7 +6,7 @@ import Section from "../components/section";
 import Footer from "../components/footer";
 import inform from "../../static/info-rm.png"
 import klotski from "../../static/klotski-solver.png"
-import sqlite from "../../static/sqlite-white.ico"
+import sqlite from "../../static/sqlite-icon"
 
 export default function Projects() {
   return (
@@ -53,12 +53,7 @@ export default function Projects() {
                       size="2xl" 
                       name="AWS"
                     />
-                    <img src={sqlite}
-                      className="icon"
-                      height="32px"
-                      title="sqlite"
-                      alt="sqlite"
-                    />
+                    {sqlite} 
                   </div>
                 </div>
               </div>

@@ -6,7 +6,7 @@ import Entry from "../components/entry"
 import Footer from "../components/footer"
 import Nav from "../components/nav"
 import Section from "../components/section"
-import sqlite from "../../static/sqlite-white.ico"
+import sqlite from "../../static/sqlite-icon"
 
 export default function Home() {
   return (
@@ -149,12 +149,7 @@ export default function Home() {
                     size="2xl" 
                     name="mySQL"
                   />
-                  <img src={sqlite}
-                    className="icon"
-                    height="32px"
-                    title="sqlite"
-                    alt="sqlite"
-                  />
+                  {sqlite} 
                 </div>
               </div>
               <div className="block">
