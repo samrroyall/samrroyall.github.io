@@ -31,7 +31,7 @@ export default function Home() {
                 content={
                   < >
                     <ul>
-                      <li>GPA: 3.44/4.0 (<span class="em">Dean's List 15/16, 16/17, 17/18, 18/19</span>)</li>
+                      <li>GPA: 3.44/4.0 (<span className="em">Dean's List 15/16, 16/17, 17/18, 18/19</span>)</li>
                       <li>Curriculum:</li>
                       <ul>
                         <li>...</li>

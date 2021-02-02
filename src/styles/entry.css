@@ -16,16 +16,13 @@
     justify-content: flex-start;
 }
 .logo {
+    height: 35px;
     min-width: 40px;
     margin: 8px 10px 10px;
     display: flex;
     justify-content: center;
 }
 .icon { fill: var(--text-color); }
-#dojo-icon {
-    fill: var(--primary-color);
-    background: var(--text-color);
-}
 .titles { 
     padding-right: 30px;
     line-height: 1; 
