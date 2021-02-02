@@ -6,7 +6,11 @@ import Entry from "../components/entry"
 import Footer from "../components/footer"
 import Nav from "../components/nav"
 import Section from "../components/section"
+import aon from "../../static/aon-icon"
+import dojo from "../../static/dojo-icon"
 import sqlite from "../../static/sqlite-icon"
+import tiber from "../../static/tiber-icon"
+import uchicago from "../../static/uchicago-icon"
 
 export default function Home() {
   return (
@@ -19,6 +23,8 @@ export default function Home() {
           content={
             <>
               <Entry
+                icon={uchicago}
+                iconLabel="UChicago logo"
                 title="University of Chicago"
                 subtitle="BS Computer Science, BA Philosophy"
                 date={<span>Oct. '15 -<br/>Jun. '19</span>}
@@ -35,6 +41,8 @@ export default function Home() {
                 }
               />
               <Entry
+                icon={dojo}
+                iconLabel="Coding Dojo logo"
                 title="Coding Dojo"
                 subtitle="Full-time Software Engineering Bootcamp"
                 date="1/21-5/21"
@@ -61,27 +69,35 @@ export default function Home() {
           content={
             <>
               <Entry
-                title="Stroz Friedberg"
-                subtitle="Consultant, Digital Forensics/Incident Response"
+                icon={aon}
+                iconLabel="AON logo"
+                title="Stroz Friedberg, an AON Company"
+                subtitle="Consultant, DFIR"
                 date={<span>Jun. '20 -<br/>Dec. '20</span>}
                 content="Default description Default description Default description 
                 Default description Default description Default description Default description."
               />
               <Entry
-                title="Stroz Friedberg"
+                icon={aon}
+                iconLabel="AON logo"
+                title="Stroz Friedberg, an AON Company"
                 subtitle="Cyber Associate"
                 date={<span>Aug. '19 -<br/>May '20</span>}
                 content="Default description Default description Default description 
                 Default description Default description Default description Default description."
               />
               <Entry
-                title="Stroz Friedberg"
+                icon={aon}
+                iconLabel="AON logo"
+                title="Stroz Friedberg, an AON Company"
                 subtitle="Cyber Summer Associate"
                 date={<span>Jun. '18 -<br/>Aug '18</span>}
                 content="Default description Default description Default description 
                 Default description Default description Default description Default description."
               />
               <Entry
+                icon={tiber}
+                iconLabel="tiber solutions logo"
                 title="Tiber Solutions"
                 subtitle="Database Intern"
                 date="6/17-9/17"

@@ -11,6 +11,25 @@
     border-left: 5px solid var(--dark-color);
     border-bottom: 3px solid var(--dark-color);
 }
+.lhs {
+    display: flex;
+    justify-content: flex-start;
+}
+.logo {
+    min-width: 40px;
+    margin: 8px 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+.icon { fill: var(--text-color); }
+#dojo-icon {
+    fill: var(--primary-color);
+    background: var(--text-color);
+}
+.titles { 
+    padding-right: 30px;
+    line-height: 1; 
+}
 .subtitle {
     font-style: italic;
     font-size: .65em;
