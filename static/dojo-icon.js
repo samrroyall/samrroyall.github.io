@@ -5,8 +5,8 @@ const dojo = (
         class="icon"
         id="dojo-icon"
         xmlns="http://www.w3.org/2000/svg"
-        height="30px" 
-        viewBox="0 0 298 227"
+        height="30px"
+        viewBox="0 0 298 230"
         preserveAspectRatio="xMidYMid meet">
         <metadata>
             Created by potrace 1.16, written by Peter Selinger 2001-2019
