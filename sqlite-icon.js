@@ -8,8 +8,7 @@ const sqlite = (
         height="32px" 
         viewBox="0 0 128 128">
         <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
-        <g class="icon" 
-            transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
+        <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
             stroke="none">
             <path d="M965 1268 c-11 -6 -43 -33 -70 -59 l-51 -49 -321 -3 c-444 -3 -413
             28 -413 -410 0 -426 -14 -407 306 -407 l211 0 6 -133 c7 -147 20 -207 44 -207
