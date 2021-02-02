@@ -5,7 +5,7 @@ import { brandSet } from '@coreui/icons'
 class CoreUIIcon extends React.Component {
     render() {
         return(
-            <span title={this.props.name} aria-label={this.props.name}>
+            <span title={this.props.title} aria-label={this.props.name}>
                 <CIcon 
                     content={this.props.content} 
                     size={this.props.size}

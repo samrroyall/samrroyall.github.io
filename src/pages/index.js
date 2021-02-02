@@ -1,6 +1,6 @@
 import React from "react"
 import "../../gatsby-browser"
-import { brandSet } from '@coreui/icons'
+import { brandSet, freeSet } from '@coreui/icons'
 import CoreUIIcon from "../components/cuiicon"
 import Entry from "../components/entry"
 import Footer from "../components/footer"
@@ -102,25 +102,30 @@ export default function Home() {
                 <div className="icon-row">
                   <CoreUIIcon content={brandSet.cibCplusplus} 
                     size="2xl" 
-                    name="c++" 
+                    name="c++ logo" 
+                    title="c++" 
                   />
                   <CoreUIIcon content={brandSet.cibPython} 
                     size="2xl" 
-                    name="python"
+                    name="python logo"
+                    title="python"
                   />
                   <CoreUIIcon content={brandSet.cibRust} 
                     size="2xl" 
-                    name="rust" 
+                    name="rust logo" 
+                    title="rust" 
                   />
                 </div>
                 <div className="icon-row">
                   <CoreUIIcon content={brandSet.cibJavascript} 
                     size="2xl" 
-                    name="javascript"
+                    name="javascript logo"
+                    title="javascript"
                   />
                   <CoreUIIcon content={brandSet.cibTypescript} 
                     size="2xl" 
-                    name="typescript"
+                    name="typescript logo"
+                    title="typescript"
                   />
                 </div>
               </div>
@@ -129,27 +134,33 @@ export default function Home() {
                 <div className="icon-row">
                   <CoreUIIcon content={brandSet.cibGit} 
                     size="2xl" 
-                    name="git"
+                    name="git logo"
+                    title="git"
                   />
                   <CoreUIIcon content={brandSet.cibLinux} 
                     size="2xl" 
-                    name="linux"
+                    name="linux logo"
+                    title="linux"
                   />
                   <CoreUIIcon content={brandSet.cibAmazonAws} 
                     size="2xl" 
-                    name="AWS"
+                    name="AWS logo"
+                    title="AWS"
                   />
                 </div>
                 <div className="icon-row">
                   <CoreUIIcon content={brandSet.cibPostgresql} 
                     size="2xl" 
-                    name="postgres"
+                    name="postgres logo"
+                    title="postgres"
                   />
                   <CoreUIIcon content={brandSet.cibMysql} 
                     size="2xl" 
-                    name="mySQL"
+                    name="mySQL logo"
+                    title="mySQL"
                   />
-                  <span title="sqlite" aria-label="sqlite logo">
+                  <span title="sqlite" 
+                    aria-label="sqlite logo">
                     {sqlite}
                   </span>
                 </div>
@@ -159,43 +170,52 @@ export default function Home() {
                 <div className="icon-row">
                   <CoreUIIcon content={brandSet.cibReact} 
                     size="2xl" 
-                    name="react"
+                    name="react logo"
+                    title="react"
                   />
                   <CoreUIIcon content={brandSet.cibGatsby} 
                     size="2xl" 
-                    name="gatsby"
+                    name="gatsby logo"
+                    title="gatsby"
                   />
                   <CoreUIIcon content={brandSet.cibNodeJs} 
                     size="2xl" 
-                    name="node.js"
+                    name="node.js logo"
+                    title="node.js"
                   />
                   <CoreUIIcon content={brandSet.cibJquery} 
                     size="2xl" 
-                    name="jquery"
+                    name="jquery logo"
+                    title="jquery"
                   />
                 </div>
                 <div className="icon-row">
                   <CoreUIIcon content={brandSet.cibFlask} 
                     size="2xl" 
-                    name="flask"
+                    name="flask logo"
+                    title="flask"
                   />
                   <CoreUIIcon content={brandSet.cibDjango} 
                     size="2xl" 
-                    name="django"
+                    name="django logo"
+                    title="django"
                   />
                 </div>
                 <div className="icon-row">
-                  <CoreUIIcon content={brandSet.cibHtml5} 
+                  <CoreUIIcon content={brandSet.cibHtml5Shield} 
                     size="2xl" 
-                    name="HTML"
+                    name="HTML logo"
+                    title="HTML"
                   />
                   <CoreUIIcon content={brandSet.cibCss3Shiled} 
                     size="2xl" 
-                    name="CSS"
+                    name="CSS logo"
+                    title="CSS"
                   />
                   <CoreUIIcon content={brandSet.cibBootstrap}
                     size="2xl"
-                    name="bootstrap"
+                    name="bootstrap logo"
+                    title="bootstrap"
                   />
                 </div>
               </div>
@@ -206,9 +226,72 @@ export default function Home() {
           pos={4} 
           title="Interests" 
           content={
-            <div class="block">
-              <h2>To-Do</h2>
-              <span>...</span>
+            <div className="block">
+              <ul className="labelled-icon-list">
+                <li>
+                  <CoreUIIcon content={freeSet.cilPuzzle}
+                    size="2xl"
+                    name="puzzle icon"
+                  /> 
+                  <span>Solving Problems with Code</span>
+                </li>
+                <li>
+                  <CoreUIIcon content={freeSet.cilMap}
+                    size="2xl"
+                    name="map icon"
+                  /> 
+                  <span>Hiking</span>
+                </li>
+                <li>
+                  <CoreUIIcon content={freeSet.cilGraph}
+                    size="2xl"
+                    name="graph icon"
+                  />
+                  <span>Rock Climbing</span>
+                </li>
+                <li>
+                  <CoreUIIcon content={freeSet.cilCoffee}
+                    size="2xl"
+                    name="mug icon"
+                  />
+                  <span>Coffee</span>
+                </li>
+                <li>
+                  <CoreUIIcon content={freeSet.cilSoccer}
+                    size="2xl"
+                    name="soccer ball icon"
+                  /> 
+                  <span>Following and Playing Soccer</span>
+                </li>
+                <li>
+                  <CoreUIIcon content={freeSet.cilKeyboard}
+                    size="2xl"
+                    name="keyboard icon"
+                  />
+                  <span>Mechanical Keyboards</span>
+                </li>
+                <li>
+                  <CoreUIIcon content={freeSet.cilHeadphones}
+                    size="2xl"
+                    name="headphones icon"
+                  />
+                  <span>Music</span>
+                </li>
+                <li>
+                  <CoreUIIcon content={freeSet.cilMemory}
+                    size="2xl"
+                    name="CPU icon"
+                  />
+                  <span>Computer Building</span>
+                </li>
+                <li>
+                  <CoreUIIcon content={freeSet.cilGamepad}
+                    size="2xl"
+                    name="gaming controller icon"
+                  />
+                  <span>Gaming</span>
+                </li>
+              </ul>
             </div>
           }
         />

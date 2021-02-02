@@ -54,6 +54,25 @@ section {
     fill: var(--text-color);
 }
 
+.labelled-icon-list { 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+.labelled-icon-list li { 
+    padding: 7px 5px; 
+}
+.labelled-icon-list svg { 
+    color: var(--light-color);
+    vertical-align: middle; 
+}
+.labelled-icon-list span {
+    color: var(--text-color);
+    margin-left: 20px;
+    font-size: .9em;
+}
+
 .top-border { border-top: 1px solid var(--light-color); }
 .left-border { border-left: 1px solid var(--light-color); }
 

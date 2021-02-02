@@ -25,7 +25,7 @@ export default function Projects() {
                     <span class="em">info-rm</span> &nbsp; is a stats aggregator for club soccer players in
                     Europe's top domestic leagues and international tournaments. See this 
                     &nbsp;<a href="#">blog post</a>&nbsp;
-                    to learn about the search algorithm used!                  
+                    to learn about the search algorithm!                  
                   </p>
                 </div>
                 <div className="block">
@@ -33,25 +33,30 @@ export default function Projects() {
                   <div className="icon-row">
                     <CoreUIIcon content={brandSet.cibFlask} 
                       size="2xl" 
-                      name="flask"
+                      name="flask logo"
+                      title="flask"
                     />
                     <CoreUIIcon content={brandSet.cibPython} 
                       size="2xl" 
-                      name="python"
+                      name="python logo"
+                      title="python"
                     />
                     <CoreUIIcon content={brandSet.cibJavascript} 
                       size="2xl" 
-                      name="javascript"
+                      name="javascript logo"
+                      title="javascript"
                     />
                     <CoreUIIcon content={brandSet.cibJquery} 
                       size="2xl" 
-                      name="jquery"
+                      name="jquery logo"
+                      title="jquery"
                     />
                 </div>
                 <div className="icon-row">
                     <CoreUIIcon content={brandSet.cibAmazonAws} 
                       size="2xl" 
-                      name="AWS"
+                      name="AWS logo"
+                      title="AWS"
                     />
                     <span title="sqlite" aria-label="sqlite logo">
                       {sqlite}
@@ -73,7 +78,7 @@ export default function Projects() {
                     <span class="em">Klotski Solver</span> &nbsp; is, as the name suggests, 
                     a shortest-path Klotski (sliding-block puzzle) solver. See this
                     &nbsp;<a href="#">blog post</a>&nbsp;
-                    to learn more about the solution algorithm!                  
+                    to learn more about the algorithm behind the solution!                  
                   </p>
                 </div>
                 <div className="block">
@@ -81,19 +86,23 @@ export default function Projects() {
                   <div className="icon-row">
                     <CoreUIIcon content={brandSet.cibReact} 
                       size="2xl" 
-                      name="react"
+                      name="react logo"
+                      title="react"
                     />
                     <CoreUIIcon content={brandSet.cibNodeJs} 
                       size="2xl" 
-                      name="node.js"
+                      name="node.js logo"
+                      title="node.js"
                     />
                     <CoreUIIcon content={brandSet.cibTypescript} 
                       size="2xl" 
-                      name="typescript"
+                      name="typescript logo"
+                      title="typescript"
                     />
                     <CoreUIIcon content={brandSet.cibGithub} 
                       size="2xl" 
-                      name="github pages"
+                      name="github pages logo"
+                      title="github pages"
                     />
                   </div>
                 </div>

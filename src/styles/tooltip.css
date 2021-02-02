@@ -10,8 +10,9 @@
 .tooltip::after {
     content: "";
     position: absolute;
-    margin: 33px 0% 0 -40%;
+    margin: 30px 0 0 -33px;
     border-style: solid;
+    border-width: 8px; 
     border-color: rgb(45, 179, 127) transparent transparent transparent;
 }
 .display {

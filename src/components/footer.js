@@ -57,9 +57,21 @@ export default function Footer() {
             </div>
             <div id="powered-by">
                 <span className="fine text-white">Powered by</span>
-                <CoreUIIcon content={brandSet.cibGatsby} size="md" name="gatsby"/>
-                <CoreUIIcon content={brandSet.cibReact} size="md" name="react"/>
-                <CoreUIIcon content={brandSet.cibNodeJs} size="md" name="node.js"/>
+                <CoreUIIcon content={brandSet.cibGatsby} 
+                    size="md" 
+                    name="gatsby logo"
+                    title="gatsby"
+                />
+                <CoreUIIcon content={brandSet.cibReact} 
+                    size="md" 
+                    name="react logo"
+                    title="react"
+                />
+                <CoreUIIcon content={brandSet.cibNodeJs} 
+                    size="md" 
+                    name="node.js logo"
+                    title="node.js"
+                />
             </div>
         </footer>
     )
