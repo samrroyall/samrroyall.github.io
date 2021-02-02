@@ -1,7 +1,7 @@
 import React from "react"
 import "../../gatsby-browser"
 import { brandSet } from '@coreui/icons'
-import CoreUIIcon from "../components/cuiicons"
+import CoreUIIcon from "../components/cuiicon"
 import Entry from "../components/entry"
 import Footer from "../components/footer"
 import Nav from "../components/nav"
@@ -149,7 +149,9 @@ export default function Home() {
                     size="2xl" 
                     name="mySQL"
                   />
-                  {sqlite} 
+                  <span title="sqlite" aria-label="sqlite logo">
+                    {sqlite}
+                  </span>
                 </div>
               </div>
               <div className="block">

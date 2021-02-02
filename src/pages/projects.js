@@ -1,6 +1,6 @@
 import React from "react";
 import { brandSet } from "@coreui/icons"
-import CoreUIIcon from "../components/cuiicons"
+import CoreUIIcon from "../components/cuiicon"
 import Nav from "../components/nav";
 import Section from "../components/section";
 import Footer from "../components/footer";
@@ -53,7 +53,9 @@ export default function Projects() {
                       size="2xl" 
                       name="AWS"
                     />
-                    {sqlite} 
+                    <span title="sqlite" aria-label="sqlite logo">
+                      {sqlite}
+                    </span>
                   </div>
                 </div>
               </div>
