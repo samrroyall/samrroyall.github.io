@@ -22,8 +22,8 @@ export default function Projects() {
                 <div className="block">
                   <h2>Description</h2>
                   <p>
-                    <span className="em">info-rm</span> &nbsp; is a stats aggregator for club soccer players in
-                    Europe's top domestic leagues and international tournaments. See this 
+                    <span className="em">info-rm</span> &nbsp; is a stats aggregator for soccer 
+                    players in Europe's top domestic leagues and international tournaments. See this 
                     &nbsp;<a href="#">blog post</a>&nbsp;
                     to learn about the search algorithm!                  
                   </p>
@@ -75,8 +75,8 @@ export default function Projects() {
                 <div className="block">
                   <h2>Description</h2>
                   <p>
-                    <span class="em">Klotski Solver</span> &nbsp; is, as the name suggests, 
-                    a shortest-path Klotski (sliding-block puzzle) solver. See this
+                    <span class="em">Klotski Solver</span> &nbsp; is a shortest-path Klotski sliding-block puzzle solver. 
+                    See this
                     &nbsp;<a href="#">blog post</a>&nbsp;
                     to learn more about the algorithm behind the solution!                  
                   </p>

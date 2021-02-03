@@ -28,10 +28,25 @@ export default function Home() {
                 height="300px"
                 alt="profile picture" 
               />
-              <span className="bio-text">Hi! My name is Sam Royall. I'm a software engineer based in Chicago,
-              IL. Take a look around if you want to get to know me better. <br />
-              <span className="text-light"> Make sure you set your favorite colorscheme 
-              in the website footer.</span></span>
+              <span className="bio-text">
+                <span>
+                  Hi! My name is Sam Royall. I'm a software engineer based in Chicago,
+                  IL. Take a look around if you want to get to know me better.
+                </span>
+                <br /> <br />
+                <span className="text-light"> 
+                  Make sure you set your favorite colorscheme in the website footer.
+                </span>
+                <br /><br />
+                <span> Check out my resume! </span>
+                <a href="https://www.overleaf.com/project/5f75102bd5f2f70001d31230">
+                  <CoreUIIcon content={freeSet.cilDescription}
+                    size="md"
+                    name="resume logo"
+                    title="resume"
+                  />
+                </a>
+              </span>
             </div>
           }
         />

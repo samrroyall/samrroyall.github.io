@@ -14,10 +14,12 @@ section {
 }
 .bio span.bio-text {
     margin: auto 20px;
-    height: 130px;
+    height: 200px;
     max-width: 350px;
     font-size: .8em;
 }
+.bio a { color: var(--text-color); }
+.bio a:hover { color: var(--light-color); }
 .header { 
     width: 100%;
     border-bottom: 1px solid var(--light-color);
