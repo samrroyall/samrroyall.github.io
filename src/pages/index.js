@@ -35,17 +35,10 @@ export default function Home() {
                 </span>
                 <br /> <br />
                 <span className="text-light"> 
-                  Make sure you set your favorite colorscheme in the website footer
+                  Change the colorscheme in the page footer!
                 </span>
                 <br /><br />
-                <span> Check out my resume </span>
-                <a href="https://www.overleaf.com/read/zqjpymktwhzf">
-                  <CoreUIIcon content={freeSet.cilDescription}
-                    size="md"
-                    name="resume logo"
-                    title="resume"
-                  />
-                </a>
+                <span> Check out my <a href="https://www.overleaf.com/read/zqjpymktwhzf">resume</a>!</span>
               </span>
             </div>
           }

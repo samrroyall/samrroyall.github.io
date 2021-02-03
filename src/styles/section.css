@@ -18,8 +18,8 @@ section {
     max-width: 350px;
     font-size: .8em;
 }
-.bio a { color: var(--text-color); }
-.bio a:hover { color: var(--light-color); }
+.bio a { color: var(--light-color); }
+.bio a:hover { color: var(--dark-color); }
 .header { 
     width: 100%;
     border-bottom: 1px solid var(--light-color);
