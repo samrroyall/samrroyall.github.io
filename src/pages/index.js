@@ -30,16 +30,16 @@ export default function Home() {
               />
               <span className="bio-text">
                 <span>
-                  Hi! My name is Sam Royall. I'm a software engineer based in Chicago,
-                  IL. Take a look around if you want to get to know me better.
+                  My name is Sam Royall. I'm a software engineer based in Chicago,
+                  IL. Take a look around and get to know me better!
                 </span>
                 <br /> <br />
                 <span className="text-light"> 
-                  Make sure you set your favorite colorscheme in the website footer.
+                  Make sure you set your favorite colorscheme in the website footer
                 </span>
                 <br /><br />
-                <span> Check out my resume! </span>
-                <a href="https://www.overleaf.com/project/5f75102bd5f2f70001d31230">
+                <span> Check out my resume </span>
+                <a href="https://www.overleaf.com/read/zqjpymktwhzf">
                   <CoreUIIcon content={freeSet.cilDescription}
                     size="md"
                     name="resume logo"
