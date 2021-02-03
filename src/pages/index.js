@@ -54,18 +54,13 @@ export default function Home() {
           pos={1} 
           title="Education" 
           content={
-            <>
+            <div className="entry-list">
               <Entry
                 icon={uchicago}
                 iconLabel="UChicago logo"
                 title="University of Chicago"
                 subtitle="BS Computer Science, BA Philosophy"
                 date={<span>Oct. '15 -<br/>Jun. '19</span>}
-                content={
-                  <span>
-                    Default text here...
-                  </span>
-                }
               />
               <Entry
                 icon={dojo}
@@ -74,29 +69,21 @@ export default function Home() {
                 subtitle="Full-time Software Engineering Bootcamp"
                 date="1/21-5/21"
                 date={<span>Jan. '21 -<br/>May '21</span>}
-                content={<span>
-                  Default text here...
-                </span>}              
               />
-            </>
+            </div>
           }
         />
         <Section 
           pos={2} 
           title="Experience" 
           content={
-            <>
+            <div className="entry-list">
               <Entry
                 icon={aon}
                 iconLabel="AON logo"
                 title="Stroz Friedberg, an AON Company"
                 subtitle="DFIR Consultant, Cyber Associate"
                 date={<span>Aug. '19 -<br/>Dec. '20</span>}
-                content={
-                  <span>
-                    Default text here...
-                  </span>
-                }
               />
               <Entry
                 icon={aon}
@@ -104,11 +91,6 @@ export default function Home() {
                 title="Stroz Friedberg, an AON Company"
                 subtitle="Cyber Summer Associate"
                 date={<span>Jun. '18 -<br/>Aug '18</span>}
-                content={
-                  <span>
-                    Default text here...
-                  </span>
-                }
               />
               <Entry
                 icon={tiber}
@@ -117,13 +99,8 @@ export default function Home() {
                 subtitle="Database Intern"
                 date="6/17-9/17"
                 date={<span>Jun. '17 -<br/>Sep. '17</span>}
-                content={
-                  <span>
-                    Default text here...
-                  </span>
-                }
               />
-            </>
+            </div>
           }
         />
         <Section 
@@ -291,6 +268,13 @@ export default function Home() {
                   <span>Coffee</span>
                 </li>
                 <li>
+                  <CoreUIIcon content={freeSet.cilGamepad}
+                    size="2xl"
+                    name="gaming controller icon"
+                  />
+                  <span>Gaming</span>
+                </li>
+                <li>
                   <CoreUIIcon content={freeSet.cilSoccer}
                     size="2xl"
                     name="soccer ball icon"
@@ -317,13 +301,6 @@ export default function Home() {
                     name="CPU icon"
                   />
                   <span>Computer Building</span>
-                </li>
-                <li>
-                  <CoreUIIcon content={freeSet.cilGamepad}
-                    size="2xl"
-                    name="gaming controller icon"
-                  />
-                  <span>Gaming</span>
                 </li>
               </ul>
             </div>

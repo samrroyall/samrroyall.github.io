@@ -1,17 +1,19 @@
 .head {
     width: 91%;
-    margin-top: 10px;
-    border-left: 5px solid var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin: 20px 0;
+    border-left: 5px solid var(--dark-color);
+    border-bottom: 3px solid var(--dark-color);
     display: flex;
     justify-content: space-between;
     text-align: left;
-    cursor: pointer;
 }
-.head:hover {
+
+/*.head:hover {
     border-left: 5px solid var(--dark-color);
     border-bottom: 3px solid var(--dark-color);
-}
+}*/
+
 .lhs {
     display: flex;
     justify-content: flex-start;
@@ -38,7 +40,7 @@
     font-size: .55em;
     text-align: right;
 }
-.body {
+/*.body {
     width: 100%;
     padding: 20px 5%;
     text-align: left;
@@ -51,4 +53,4 @@
 .body ul ul {
     margin-left: 7%;
     list-style-type: circle;
-}
+}*/
