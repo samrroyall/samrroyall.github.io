@@ -8,6 +8,7 @@ import Nav from "../components/nav"
 import Section from "../components/section"
 import aon from "../../static/aon-icon"
 import dojo from "../../static/dojo-icon"
+import avatar from "../../static/profile-cropped.jpg" 
 import sqlite from "../../static/sqlite-icon"
 import tiber from "../../static/tiber-icon"
 import uchicago from "../../static/uchicago-icon"
@@ -17,6 +18,23 @@ export default function Home() {
     <div>
       <Nav currPage="home" />
       <main>
+        <Section 
+          pos={0}
+          title="About Me"
+          content={
+            <div className="bio">
+              <img src={avatar} 
+                className="circle" 
+                height="300px"
+                alt="profile picture" 
+              />
+              <span className="bio-text">Hi! My name is Sam Royall. I'm a software engineer based in Chicago,
+              IL. Take a look around if you want to get to know me better. <br />
+              <span className="text-light"> Make sure you set your favorite colorscheme 
+              in the website footer.</span></span>
+            </div>
+          }
+        />
         <Section 
           pos={1} 
           title="Education" 
@@ -29,15 +47,9 @@ export default function Home() {
                 subtitle="BS Computer Science, BA Philosophy"
                 date={<span>Oct. '15 -<br/>Jun. '19</span>}
                 content={
-                  < >
-                    <ul>
-                      <li>GPA: 3.44/4.0 (<span className="em">Dean's List 15/16, 16/17, 17/18, 18/19</span>)</li>
-                      <li>Curriculum:</li>
-                      <ul>
-                        <li>...</li>
-                      </ul>
-                    </ul>
-                  </>
+                  <span>
+                    Default text here...
+                  </span>
                 }
               />
               <Entry
@@ -47,18 +59,9 @@ export default function Home() {
                 subtitle="Full-time Software Engineering Bootcamp"
                 date="1/21-5/21"
                 date={<span>Jan. '21 -<br/>May '21</span>}
-                content={
-                  <ul>
-                    <li> GPA/Grades: ???</li>
-                    <li> Curriculum:</li>
-                    <ul>
-                      <li>Web Fundamentals: HTML, CSS, JS, JQuery</li>
-                      <li>Stack 1: Python, Django/Flask, MySQL</li>
-                      <li>Stack 2: MongoDB, ExpressJS, ReactJS, NodeJS</li>
-                      <li>Stack 3: C#, .NET, Postgres</li>
-                    </ul>
-                  </ul>
-                }              
+                content={<span>
+                  Default text here...
+                </span>}              
               />
             </>
           }
@@ -72,19 +75,13 @@ export default function Home() {
                 icon={aon}
                 iconLabel="AON logo"
                 title="Stroz Friedberg, an AON Company"
-                subtitle="Consultant, DFIR"
-                date={<span>Jun. '20 -<br/>Dec. '20</span>}
-                content="Default description Default description Default description 
-                Default description Default description Default description Default description."
-              />
-              <Entry
-                icon={aon}
-                iconLabel="AON logo"
-                title="Stroz Friedberg, an AON Company"
-                subtitle="Cyber Associate"
-                date={<span>Aug. '19 -<br/>May '20</span>}
-                content="Default description Default description Default description 
-                Default description Default description Default description Default description."
+                subtitle="DFIR Consultant, Cyber Associate"
+                date={<span>Aug. '19 -<br/>Dec. '20</span>}
+                content={
+                  <span>
+                    Default text here...
+                  </span>
+                }
               />
               <Entry
                 icon={aon}
@@ -92,8 +89,11 @@ export default function Home() {
                 title="Stroz Friedberg, an AON Company"
                 subtitle="Cyber Summer Associate"
                 date={<span>Jun. '18 -<br/>Aug '18</span>}
-                content="Default description Default description Default description 
-                Default description Default description Default description Default description."
+                content={
+                  <span>
+                    Default text here...
+                  </span>
+                }
               />
               <Entry
                 icon={tiber}
@@ -102,8 +102,11 @@ export default function Home() {
                 subtitle="Database Intern"
                 date="6/17-9/17"
                 date={<span>Jun. '17 -<br/>Sep. '17</span>}
-                content="Default description Default description Default description 
-                Default description Default description Default description Default description."
+                content={
+                  <span>
+                    Default text here...
+                  </span>
+                }
               />
             </>
           }
@@ -277,7 +280,7 @@ export default function Home() {
                     size="2xl"
                     name="soccer ball icon"
                   /> 
-                  <span>Following and Playing Soccer</span>
+                  <span>Following & Playing Soccer</span>
                 </li>
                 <li>
                   <CoreUIIcon content={freeSet.cilKeyboard}

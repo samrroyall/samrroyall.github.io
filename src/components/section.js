@@ -14,10 +14,14 @@ class Section extends React.Component {
 
     render() {
         var classString = ""
-        if (this.props.pos > 2) {
-            classString += "not-first-row "
-        } if (this.props.pos % 2 === 0) {
-            classString += "not-first-col"
+        if (this.props.pos === 0) {
+            classString += "header"
+        } else {
+            if (this.props.pos > 2) {
+                classString += "not-first-row "
+            } if (this.props.pos % 2 === 0) {
+                classString += "not-first-col "
+            }
         }
 
         return (

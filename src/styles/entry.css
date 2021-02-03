@@ -1,5 +1,6 @@
 .head {
     width: 91%;
+    margin-top: 10px;
     border-left: 5px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
     display: flex;

@@ -22,7 +22,7 @@ export default function Projects() {
                 <div className="block">
                   <h2>Description</h2>
                   <p>
-                    <span class="em">info-rm</span> &nbsp; is a stats aggregator for club soccer players in
+                    <span className="em">info-rm</span> &nbsp; is a stats aggregator for club soccer players in
                     Europe's top domestic leagues and international tournaments. See this 
                     &nbsp;<a href="#">blog post</a>&nbsp;
                     to learn about the search algorithm!                  

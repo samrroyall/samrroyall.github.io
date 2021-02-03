@@ -4,6 +4,24 @@ section {
     padding: 10px; 
     text-align: center;
 }
+.bio {
+    margin: 30px auto -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bio img {
+    margin: 0 auto 30px;
+}
+.bio span.bio-text {
+    margin: auto 20px;
+    height: 130px;
+    max-width: 350px;
+    font-size: .8em;
+}
+.header { 
+    width: 100%;
+    border-bottom: 1px solid var(--light-color);
+}
 
 .sectionBody {
     padding: 10px 50px;
@@ -61,9 +79,10 @@ section {
     margin: 30px 0;
 }
 .labelled-icon-list li { 
-    padding: 7px 5px; 
+    padding: 7px 20px 7px 5px; 
 }
 .labelled-icon-list svg { 
+    margin-left: -20px;
     color: var(--light-color);
     vertical-align: middle; 
 }
