@@ -3,9 +3,7 @@ footer {
     width: 100%;
     padding: 30px 0;
 }
-#theme {
-    text-align: center;
-}
+#theme { text-align: center; }
 #copyright { 
     margin: 10px 0 0; 
     color: var(--light-color);
@@ -14,7 +12,7 @@ footer {
 #socialsList {
     display: flex;
     justify-content: center;
-    padding: 0 0 15px;
+    padding: 15px 0;
 } 
 #themePrompt { 
     color: var(--light-color); 
@@ -29,7 +27,7 @@ footer {
 #poweredBy { 
     padding: 20px 0 0; 
     display: flex;
-    height: 30px;
+    /*height: 30px;*/
     justify-content: center;
 }
 #poweredBy span { margin-right: 5px; }

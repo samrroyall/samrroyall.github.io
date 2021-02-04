@@ -19,7 +19,8 @@ section {
 .bio a:hover { color: var(--dark-color); }
 .bio img { margin: 0 auto 30px; }
 .bio span.bioText {
-    margin: auto 20px;
+    margin: auto;
+    padding: 20px;
     height: 200px;
     max-width: 350px;
     font-size: .8em;
