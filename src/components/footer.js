@@ -1,10 +1,10 @@
 import React from "react"
 import { brandSet } from '@coreui/icons'
-import "../styles/footer.css"
+import "../styles/Footer.css"
 // components
-import CoreUIIcon from "../components/cuiicon"
-import ThemePicker from "./themepicker"
-import Tooltip from "./tooltip"
+import CoreUIIcon from "./cuiicon"
+import ThemePicker from "./ThemePicker"
+import Tooltip from "./Tooltip"
 
 export default function Footer() {
     let githubIconLink = (
@@ -70,7 +70,7 @@ export default function Footer() {
 
     return(
         <footer>
-            <div id="socials-list">
+            <div id="socialsList">
                 {githubIconLink} 
                 {linkedInIconLink} 
                 {angellistIconLink} 
@@ -82,17 +82,17 @@ export default function Footer() {
                 />
             </div>
             <div>
-                <span className="fine text-white" id="theme-prompt">
+                <span className="fine textWhite" id="themePrompt">
                     Choose your favorite theme!
                 </span>
                 <ThemePicker />
             </div>
             <div className="fine" id="copyright">
-                <span className="text-white">samrroyall@gmail.com</span> 
+                <span className="textWhite">samrroyall@gmail.com</span> 
                 &nbsp;&nbsp; © Sam Royall. All Rights Reserved.
             </div>
-            <div id="powered-by">
-                <span className="fine text-white">Powered by</span>
+            <div id="poweredBy">
+                <span className="fine textWhite">Powered by</span>
                 {gatsbyIcon}
                 {reactIcon}
                 {nodeIcon}

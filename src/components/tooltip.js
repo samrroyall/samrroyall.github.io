@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/tooltip.css"
+import "../styles/Tooltip.css"
 
 class Tooltip extends React.Component {
     constructor(props) {
@@ -9,14 +9,12 @@ class Tooltip extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    hide() {
-        this.setState({ hidden: true });
-    }
+    hide() { this.setState({ hidden: true }); }
 
     handleClick() {
-        this.setState({ hidden: false });
+        this.setState({ hidden: false }); // show tooltip
         navigator.clipboard.writeText(this.props.copyText); // write tooltip text to clipboard
-        setTimeout(this.hide, 800);
+        setTimeout(this.hide, 800); // hide tooltip after .8 seconds
     }
 
     render () {
@@ -24,9 +22,7 @@ class Tooltip extends React.Component {
             <div onClick={this.handleClick}>
                 {this.props.content}
                 <div className={this.state.hidden ? "tooltip hide" : "tooltip"}>
-                    <span className="display">
-                        {this.props.displayText}
-                    </span>
+                    <span className="display">{this.props.displayText}</span>
                 </div>
             </div>
         )

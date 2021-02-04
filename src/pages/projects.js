@@ -1,10 +1,11 @@
 import React from "react";
 import { brandSet } from "@coreui/icons"
+import { Link } from "gatsby"
 // components
-import CoreUIIcon from "../components/cuiicon"
-import Footer from "../components/footer";
-import Nav from "../components/nav";
-import Section from "../components/section";
+import CoreUIIcon from "../components/CUIIcon"
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+import Section from "../components/Section";
 // icons
 import sqlite from "../../static/icons/sqlite-icon"
 // images
@@ -95,17 +96,17 @@ export default function Projects() {
               <h2>Description</h2>
               <p><span className="em">info-rm</span> &nbsp; is a stats aggregator for soccer 
               players in Europe's top domestic leagues and international tournaments. See 
-              this &nbsp;<a href="#">blog post</a>&nbsp; to learn about the search algorithm!</p>
+              this &nbsp;<Link to="/blog/#searchArticle">blog post</Link>&nbsp; to learn about the search algorithm!</p>
             </div>
             <div className="block">
               <h2>Technologies</h2>
-              <div className="icon-row">
+              <div className="iconRow">
                 {flaskIcon} 
                 {pythonIcon}
                 {javascriptIcon}
                 {jqueryIcon}
               </div>
-              <div className="icon-row">
+              <div className="iconRow">
                 {awsIcon}                
                 {sqliteIcon}
               </div>
@@ -122,12 +123,12 @@ export default function Projects() {
             <div className="block">
               <h2>Description</h2>
               <p><span class="em">Klotski Solver</span> &nbsp; is a shortest-path Klotski sliding-block
-              puzzle solver. See this &nbsp;<a href="#">blog post</a>&nbsp; to learn more about the 
+              puzzle solver. See this &nbsp;<Link to="/blog/#dijkstraArticle">blog post</Link>&nbsp; to learn more about the 
               algorithm behind the solution!</p>
             </div>
             <div className="block">
               <h2>Technologies</h2>                 
-              <div className="icon-row">
+              <div className="iconRow">
                 {reactIcon}
                 {nodeIcon}
                 {typescriptIcon}
@@ -137,8 +138,6 @@ export default function Projects() {
           </div>
         }
       />
-      <Section pos={3} title="Project 3" />
-      <Section pos={4} title="Project 4" />
     </main>
     <Footer />
     </>

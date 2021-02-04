@@ -1,8 +1,8 @@
 import React from "react"
-import "../styles/article.css"
+import "../styles/Article.css"
 
 let Article = (props) => (
-    <article>
+    <article id={props.id}>
         <h2>{props.title}</h2>
         <div>{props.content}</div>
     </article>

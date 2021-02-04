@@ -4,7 +4,7 @@ const aon = (
     <svg version="1.0" 
         className="icon"
         xmlns="http://www.w3.org/2000/svg"
-        height="30px"
+        height="35px"
         viewBox="0 0 1800.000000 1800.000000"
         preserveAspectRatio="xMidYMid meet">
         <metadata>

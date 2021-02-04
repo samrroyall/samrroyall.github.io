@@ -2,19 +2,19 @@ import React from "react"
 import "../../gatsby-browser"
 import { brandSet, freeSet } from '@coreui/icons'
 // components
-import CoreUIIcon from "../components/cuiicon"
-import Footer from "../components/footer"
-import Nav from "../components/nav"
-import ResumeEntry from "../components/resumeentry"
-import Section from "../components/section"
+import CoreUIIcon from "../components/CUIIcon"
+import Footer from "../components/Footer"
+import Nav from "../components/Nav"
+import ResumeEntry from "../components/ResumeEntry"
+import Section from "../components/Section"
 // icons
-import aon from "../../static/icons/aon-icon"
-import dojo from "../../static/icons/dojo-icon"
-import sqlite from "../../static/icons/sqlite-icon"
-import tiber from "../../static/icons/tiber-icon"
-import uchicago from "../../static/icons/uchicago-icon"
+import aonIcon from "../../static/icons/aon-icon"
+import dojoIcon from "../../static/icons/dojo-icon"
+import sqliteSVG from "../../static/icons/sqlite-icon"
+import tiberIcon from "../../static/icons/tiber-icon"
+import uchicagoIcon from "../../static/icons/uchicago-icon"
 // images
-import profile from "../../static/images/profile-cropped.jpg" 
+import profilePicture from "../../static/images/profile-cropped.jpg" 
 
 export default function Home() {
   let cPlusPlusIcon = (
@@ -90,7 +90,7 @@ export default function Home() {
   let sqliteIcon = (
     <span title="sqlite" 
       aria-label="sqlite logo">
-      {sqlite}
+      {sqliteSVG}
     </span>
   );
   let reactIcon = (
@@ -220,16 +220,16 @@ export default function Home() {
         title="About Me"
         content={
           <div className="bio">
-            <img src={profile} 
+            <img src={profilePicture} 
               className="circle" 
               height="300px"
               alt="profile picture" 
             />
-            <span className="bio-text">
+            <span className="bioText">
               <span>My name is Sam Royall. I'm a software engineer based in Chicago,
               IL. Take a look around and get to know me better!</span>
               <br /><br />
-              <span className="text-light">Change the colorscheme in the page footer!</span>
+              <span className="textLight">Change the colorscheme in the page footer!</span>
               <br /><br />
               <span>Check out my <a href="https://www.overleaf.com/read/zqjpymktwhzf">resume</a>!</span>
             </span>
@@ -242,19 +242,18 @@ export default function Home() {
         content={
           <>
           <ResumeEntry
-            icon={uchicago}
+            icon={dojoIcon}
+            iconLabel="Coding Dojo logo"
+            title="Coding Dojo"
+            subtitle="Full-time Software Engineering Bootcamp"
+            date={<span>Jan. '21 -<br/>May '21</span>}
+          />
+          <ResumeEntry
+            icon={uchicagoIcon}
             iconLabel="UChicago logo"
             title="University of Chicago"
             subtitle="BS Computer Science, BA Philosophy"
             date={<span>Oct. '15 -<br/>Jun. '19</span>}
-          />
-          <ResumeEntry
-            icon={dojo}
-            iconLabel="Coding Dojo logo"
-            title="Coding Dojo"
-            subtitle="Full-time Software Engineering Bootcamp"
-            date="1/21-5/21"
-            date={<span>Jan. '21 -<br/>May '21</span>}
           />
           </>
         }
@@ -265,21 +264,21 @@ export default function Home() {
         content={
           <>
           <ResumeEntry
-            icon={aon}
+            icon={aonIcon}
             iconLabel="AON logo"
             title="Stroz Friedberg, an AON Company"
             subtitle="DFIR Consultant, Cyber Associate"
             date={<span>Aug. '19 -<br/>Dec. '20</span>}
           />
           <ResumeEntry
-            icon={aon}
+            icon={aonIcon}
             iconLabel="AON logo"
             title="Stroz Friedberg, an AON Company"
             subtitle="Cyber Summer Associate"
             date={<span>Jun. '18 -<br/>Aug '18</span>}
           />
           <ResumeEntry
-            icon={tiber}
+            icon={tiberIcon}
             iconLabel="tiber solutions logo"
             title="Tiber Solutions"
             subtitle="Database Intern"
@@ -296,24 +295,24 @@ export default function Home() {
           <>
           <div className="block">
             <h2>Languages</h2>
-            <div className="icon-row">
+            <div className="iconRow">
               {cPlusPlusIcon}
               {pythonIcon}
               {rustIcon}
             </div>
-            <div className="icon-row">
+            <div className="iconRow">
               {javascriptIcon}
               {typescriptIcon}
             </div>
           </div>
           <div className="block">
             <h2>Technologies</h2>
-            <div className="icon-row">
+            <div className="iconRow">
               {gitIcon}
               {linuxIcon}
               {awsIcon}
             </div>
-            <div className="icon-row">
+            <div className="iconRow">
               {postgresIcon}
               {mysqlIcon}
               {sqliteIcon}
@@ -321,20 +320,20 @@ export default function Home() {
           </div>
           <div className="block">
             <h2>Web</h2>
-            <div className="icon-row">
+            <div className="iconRow">
               {reactIcon}
               {gatsbyIcon}
               {nodeIcon}
               {jqueryIcon}
             </div>
-            <div className="icon-row">
+            <div className="iconRow">
               {flaskIcon}
               {djangoIcon}
             </div>
-            <div className="icon-row">
+            <div className="iconRow">
+              {bootstrapIcon}
               {htmlIcon}
               {cssIcon}
-              {bootstrapIcon}
             </div>
           </div>
           </>
@@ -345,7 +344,7 @@ export default function Home() {
         title="Interests" 
         content={
           <div className="block">
-            <ul className="labelled-icon-list"> 
+            <ul className="labelledIconList"> 
               <li> {puzzleIcon} <span>Solving Problems with Code</span> </li>
               <li> {mapIcon} <span>Hiking</span> </li>
               <li> {graphIcon} <span>Rock Climbing</span> </li>

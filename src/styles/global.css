@@ -59,10 +59,10 @@ h2 {
     font-size: .62em; 
     font-weight: 400;
 }
-.text-white { color: #ffffff; }
-.text-primary { color: var(--primary-color); }
-.text-light { color: var(--light-color); }
-.text-dark { color: var(--dark-color); }
+.textWhite { color: #ffffff; }
+.textPrimary { color: var(--primary-color); }
+.textLight { color: var(--light-color); }
+.textDark { color: var(--dark-color); }
 
 /* images */
 img.circle { 

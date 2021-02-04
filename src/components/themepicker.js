@@ -1,13 +1,15 @@
 import React from "react"
 import themes from "../../static/themes"
-import "../styles/themepicker.css"
+import "../styles/ThemePicker.css"
 
 class ThemePicker extends React.Component {
     constructor(props) {
         super(props);
+        // `document` error check must be available for deployment
         if (typeof document !== `undefined` ) {
             var currTheme = document.documentElement.style.getPropertyValue("--theme");
         } else {
+            // default theme is alpine
             var currTheme = "alpine";
         }
         this.state = { theme: currTheme };
@@ -15,18 +17,21 @@ class ThemePicker extends React.Component {
     }
 
     changeTheme(e) {
+        // `document` error check must be available for deployment
         if (typeof document !== `undefined`) {
             var newTheme = e.target.value; 
-            this.setState({theme: newTheme}); // update state with new theme
-            var colors = themes[newTheme]; // get new theme's color values
-            // set color values
+            this.setState({theme: newTheme});
+            var colorVals = themes[newTheme]; // get new theme's color values
+
+            // set CSS vars with new color values
             document.documentElement.style.setProperty("--theme", newTheme);
-            document.documentElement.style.setProperty("--primary-color", colors.primary);
-            document.documentElement.style.setProperty("--light-color", colors.light);
-            document.documentElement.style.setProperty("--dark-color", colors.dark);
-            if (colors.hasOwnProperty("text")) {
-                document.documentElement.style.setProperty("--text-color", colors.text);
+            document.documentElement.style.setProperty("--primary-color", colorVals.primary);
+            document.documentElement.style.setProperty("--light-color", colorVals.light);
+            document.documentElement.style.setProperty("--dark-color", colorVals.dark);
+            if (colorVals.hasOwnProperty("text")) {
+                document.documentElement.style.setProperty("--text-color", colorVals.text);
             } else {
+                // default text color is white
                 document.documentElement.style.setProperty("--text-color", "#ffffff");
             }
         }
@@ -34,7 +39,7 @@ class ThemePicker extends React.Component {
 
     render() {
         return (
-            <select id="theme-dropdown" 
+            <select id="themeDropdown" 
                 value={this.state.theme}
                 onChange={(e) => this.changeTheme(e)}
             >

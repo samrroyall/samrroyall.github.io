@@ -4,42 +4,32 @@ section {
     padding: 10px; 
     text-align: center;
 }
+
+/* bio section */
+.header { 
+    width: 100%;
+    border-bottom: 1px solid var(--light-color);
+}
 .bio {
     margin: 30px auto -30px;
     display: flex;
     flex-wrap: wrap;
 }
-.bio img {
-    margin: 0 auto 30px;
-}
-.bio span.bio-text {
+.bio a { color: var(--light-color); }
+.bio a:hover { color: var(--dark-color); }
+.bio img { margin: 0 auto 30px; }
+.bio span.bioText {
     margin: auto 20px;
     height: 200px;
     max-width: 350px;
     font-size: .8em;
 }
-.bio a { color: var(--light-color); }
-.bio a:hover { color: var(--dark-color); }
-.header { 
-    width: 100%;
-    border-bottom: 1px solid var(--light-color);
-}
 
-.sectionBody {
-    padding: 10px 50px;
-    margin: 25px 0;
-    background-color: var(--primary-color);
-    text-align: center;
-}
-.sectionBody a {
-    color: var(--light-color);
-}
-
+/* default section styling */
 .sectionTitle {
     height: 50px;
     margin: 50px 0 25px;
 }
-
 .sectionTitle a {
     padding: 0 5px;
     display: inline;
@@ -47,14 +37,18 @@ section {
     font-family: "Roboto Mono", monospace;
     font-size: 1em;
 }
-.sectionTitle a:hover {
-    color: var(--light-color);
-}
+.sectionTitle a:hover { color: var(--light-color); }
 .sectionTitle h1 {
     border-left: 5px solid var(--light-color);
     border-bottom: 3px solid var(--light-color);
 }
-
+.sectionBody {
+    padding: 10px 50px;
+    margin: 25px 0;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+.sectionBody a { color: var(--light-color); }
 .wrapper {
     min-height: 400px;
     padding: 0 0 50px;
@@ -63,64 +57,50 @@ section {
     flex-wrap: wrap;
     align-items: center;
 }
-
 .block { margin: 20px 0; }
 .block h2 { margin: 10px; }
 .block p { font-size: .8em; }
 
-.icon-row { font-size: 2.3em; }
-.icon-row .c-icon, .icon-row .icon { 
+/* icons */
+.iconRow { font-size: 2.3em; }
+.iconRow .c-icon, .iconRow .icon { 
     margin: 0 10px; 
     fill: var(--text-color);
 }
-
-.labelled-icon-list { 
+.labelledIconList { 
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
     margin: 30px 0;
 }
-.labelled-icon-list li { 
-    padding: 7px 20px 7px 5px; 
+.labelledIconList li { padding: 7px 20px 7px 5px; }
+.labelledIconList span {
+    margin-left: 20px;
+    color: var(--text-color);
+    font-size: .9em;
 }
-.labelled-icon-list svg { 
+.labelledIconList svg { 
     margin-left: -20px;
     color: var(--light-color);
     vertical-align: middle; 
 }
-.labelled-icon-list span {
-    color: var(--text-color);
-    margin-left: 20px;
-    font-size: .9em;
-}
 
-.top-border { border-top: 1px solid var(--light-color); }
-.left-border { border-left: 1px solid var(--light-color); }
+/* section borders */
+.topBorder { border-top: 1px solid var(--light-color); }
+.leftBorder { border-left: 1px solid var(--light-color); }
 
 /* section media query */ 
 @media only screen and (min-width: 1024px) {
-    section { 
-        width: calc(50% - 22px); 
-    }
-    section.not-first-row {
-        border-top: 1px solid var(--light-color);
-    }
-    section.not-first-col {
-        border-left: 1px solid var(--light-color);
-    }
-    .sectionBody {
-        width: 50%;
-    }
+    section { width: calc(50% - 22px); }
+    section.notFirstRow { border-top: 1px solid var(--light-color); }
+    section.notFirstCol { border-left: 1px solid var(--light-color); }
+    .sectionBody { width: 50%; }
 }
-
 @media only screen and (max-width: 1023.9px) {
     section { 
         width: 100%; 
         border-top: 1px solid var(--light-color);
     }
     section:first-of-type { border: 0; }
-    .sectionBody {
-        width: 70%;
-    }
-    
+    .sectionBody { width: 70%; }
 }
