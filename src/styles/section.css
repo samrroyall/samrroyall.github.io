@@ -74,8 +74,6 @@ section {
     fill: var(--text-color);
 }
 
-.entry-list {}
-
 .labelled-icon-list { 
     display: flex; 
     flex-wrap: wrap;

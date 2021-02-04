@@ -1,46 +1,82 @@
 import React from "react"
 import { brandSet } from '@coreui/icons'
-import CoreUIIcon from "../components/cuiicon"
-import Tooltip from "./tooltip"
-import ThemePicker from "./themepicker"
 import "../styles/footer.css"
+// components
+import CoreUIIcon from "../components/cuiicon"
+import ThemePicker from "./themepicker"
+import Tooltip from "./tooltip"
 
 export default function Footer() {
+    let githubIconLink = (
+        <a href="https://github.com/samrroyall/">
+            <CoreUIIcon content={brandSet.cibGithub} 
+                size="xl" 
+                name="github" 
+            />
+        </a>
+    );
+    let linkedInIconLink = (
+        <a href="https://www.linkedin.com/in/samrroyall">
+            <CoreUIIcon content={brandSet.cibLinkedin} 
+                size="xl" 
+                name="linkedin" 
+            />
+        </a>
+    );
+    let angellistIconLink = (
+        <a href="https://angel.co/u/samrroyall">
+            <CoreUIIcon content={brandSet.cibAngellist} 
+                size="xl" 
+                name="angellist" 
+            />
+        </a>
+    );
+    let leetcodeIconLink = (
+        <a href="https://leetcode.com/fjallraver/">
+            <CoreUIIcon content={brandSet.cibLeetcode} 
+                size="xl" 
+                name="leetcode" 
+            />
+        </a>
+    );
+    let discordIcon = (
+        <CoreUIIcon content={brandSet.cibDiscord} 
+            id="discord" 
+            size="xl" 
+            name="discord"
+        />
+    )
+    let gatsbyIcon = (
+        <CoreUIIcon content={brandSet.cibGatsby} 
+            size="md" 
+            name="gatsby logo"
+            title="gatsby"
+        />
+    );
+    let reactIcon = (
+        <CoreUIIcon content={brandSet.cibReact} 
+            size="md" 
+            name="react logo"
+            title="react"
+        />
+    );
+    let nodeIcon = (
+        <CoreUIIcon content={brandSet.cibNodeJs} 
+            size="md" 
+            name="node.js logo"
+            title="node.js"
+        />
+    );
+
     return(
         <footer>
             <div id="socials-list">
-                <a href="https://github.com/samrroyall/">
-                    <CoreUIIcon content={brandSet.cibGithub} 
-                        size="xl" 
-                        name="github" 
-                    />
-                </a>
-                <a href="https://www.linkedin.com/in/samrroyall">
-                    <CoreUIIcon content={brandSet.cibLinkedin} 
-                        size="xl" 
-                        name="linkedin" 
-                    />
-                </a>
-                <a href="https://angel.co/u/samrroyall">
-                    <CoreUIIcon content={brandSet.cibAngellist} 
-                        size="xl" 
-                        name="angellist" 
-                    />
-                </a>
-                <a href="https://leetcode.com/fjallraver/">
-                    <CoreUIIcon content={brandSet.cibLeetcode} 
-                        size="xl" 
-                        name="leetcode" 
-                    />
-                </a>
+                {githubIconLink} 
+                {linkedInIconLink} 
+                {angellistIconLink} 
+                {leetcodeIconLink}        
                 <Tooltip 
-                    content={
-                        <CoreUIIcon content={brandSet.cibDiscord} 
-                            id="discord" 
-                            size="xl" 
-                            name="discord"
-                        />
-                    }
+                    content={discordIcon}
                     copyText="fjallraver#2825"
                     displayText="Copied!"
                 />
@@ -57,21 +93,9 @@ export default function Footer() {
             </div>
             <div id="powered-by">
                 <span className="fine text-white">Powered by</span>
-                <CoreUIIcon content={brandSet.cibGatsby} 
-                    size="md" 
-                    name="gatsby logo"
-                    title="gatsby"
-                />
-                <CoreUIIcon content={brandSet.cibReact} 
-                    size="md" 
-                    name="react logo"
-                    title="react"
-                />
-                <CoreUIIcon content={brandSet.cibNodeJs} 
-                    size="md" 
-                    name="node.js logo"
-                    title="node.js"
-                />
+                {gatsbyIcon}
+                {reactIcon}
+                {nodeIcon}
             </div>
         </footer>
     )

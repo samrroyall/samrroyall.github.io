@@ -5,7 +5,7 @@ import "../styles/404.css";
 
 export default function _404() {
     return(
-        <div>
+        <>
             <Nav currPage="404" />
             <main>
                 <div id="notfound-wrapper">
@@ -14,6 +14,6 @@ export default function _404() {
                 </div>
             </main>
             <Footer />
-        </div>
+        </>
     );
 }

@@ -1,7 +1,7 @@
 import React from "react"
-import "../styles/entry.css"
+import "../styles/resumeentry.css"
 
-class Entry extends React.Component {
+class ResumeEntry extends React.Component {
     constructor(props) {
         super(props);
         this.state = { hidden: true };
@@ -36,4 +36,4 @@ class Entry extends React.Component {
     }
 }
 
-export default Entry;
+export default ResumeEntry;
