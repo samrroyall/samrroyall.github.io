@@ -122,7 +122,7 @@ export default function Projects() {
           <div className="sectionBody">
             <div className="block">
               <h2>Description</h2>
-              <p><span class="em">Klotski Solver</span> &nbsp; is a shortest-path Klotski sliding-block
+              <p><span className="em">Klotski Solver</span> &nbsp; is a shortest-path Klotski sliding-block
               puzzle solver. See this &nbsp;<Link to="/blog/#dijkstraArticle">blog post</Link>&nbsp; to learn more about the 
               algorithm behind the solution!</p>
             </div>
