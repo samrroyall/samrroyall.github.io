@@ -1,9 +1,10 @@
 article {
-    width: 100%;
+    width: 95%;
     padding: 30px 5%;
     border-top: 1px solid var(--light-color);
 }
 article h2 {
+    max-width: 100%;
     padding-left: 10px;
     color: var(--text-color);
     background-color: var(--dark-color);
