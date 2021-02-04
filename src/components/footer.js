@@ -81,7 +81,7 @@ export default function Footer() {
                     displayText="Copied!"
                 />
             </div>
-            <div>
+            <div id="theme">
                 <span className="fine textWhite" id="themePrompt">
                     Choose your favorite theme!
                 </span>
