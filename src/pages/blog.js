@@ -1,6 +1,8 @@
 import React from "react"
+import nightOwlLight from "prism-react-renderer/themes/nightOwlLight"
 // components
 import Article from "../components/Article"
+import CodeBlock from "../components/CodeBlock"
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
 // iamges
@@ -9,7 +11,76 @@ import defaultKlotskiBoard from "../../static/images/default-klotski.png"
 import dijkstraTree from "../../static/images/dijkstra-tree.png"
 import klotskiTree from "../../static/images/klotski-tree-1.png"
 
+const dfsCode = (
+`function DFS(root: Node): void {
+    if (root.isSolved === true) {
+        // if root is solved, we're done!
+        console.log("Solved!");
+        return;
+    }
+    // if not, call DFS() on each of root's
+    // children
+    for (let child of root.children) {
+        DFS(child);
+    }
+}`
+);
+const bfsCode = (
+`function BFS(root: Node): void {
+    // initialize our queue with root as
+    // the only element
+    let queue: Array<Node> = [root];
+    while (queue.length > 0) {
+        // while the queue is not empty,
+        // take the next element
+        let next: Node = queue.shift(); 
+        if (next.isSolved === true) {
+            // if it's solved, we're done!
+            console.log("Solved!");
+            return;
+        }
+        // if not, add its children to the
+        // back of the queue
+        for (let child of next.children) {
+            queue.push(child);
+        }
+    }
+}`
+);
+const dijkstraCode = (
+`function Dijkstra(root: Node): Array<Node> {
+    let solution: Array<Node> = [];
+    // initialize our queue with root as
+    // the only element
+    let queue: Array<Node> = [root];
+    while (queue.length > 0) {
+        // while the queue is not empty,
+        // take the next element
+        let next: Node = queue.shift(); 
+        if (next.isSolved === true) {
+            // if it's solved, then
+            while (next !== null) {
+                // while our node exists, 
+                // add it to the front of 
+                // the solution array...
+                solution.unshift(next);
+                // and look at its parent
+                next = next.parent;
+            }
+            return solution;
+        }
+        // if not, add its children to the
+        // back of the queue
+        for (let child of next.children) {
+            queue.push(child);
+        }
+    }
+    return solution;
+}`
+);
+
 export default function Blog() {
+
     return (
         <>
         <Nav />
@@ -35,8 +106,18 @@ export default function Blog() {
                     <p>I decided to go with BFS over DFS. Why? Well, DFS would take our board, find its children, and then set its first child as the new root node. It would then find the new root node’s children and set its first child as the new root node. This process would continue until the new root node was a leaf: a solved or unsolvable board. Seeing each possible solution path to its completion one-by-one did not seem very efficient to me.
                     Alternatively, in BFS, we take our board, find its children, and put them in a queue. We start with the first node in the queue: our board's first child. We set it as the new root node, find its children, and add them to the end of the queue. We then move onto the next board in the queue: the original board’s second child. In BFS we are not seeing any one path to its completion, rather we are looking at all possible board configurations a given number of moves away from the original board. 
                     Therefore, once we encounter our first solved board, we will know that the path of moves leading to this board must be an optimal solution. Why? Because, say this board is <span className="em">x</span> moves away from the original board. We know that we have already checked all boards fewer than <span className="em">x</span> moves away from the original board because of the nature of our queue. Therefore, any solution that comes later will contain greater than or equal to <span className="em">x</span> moves.</p>
-                    <code>// DFS def DFS() code here</code>
-                    <code>// BFS def BFS() code here</code>
+                    <div className="codeRow">
+                        <CodeBlock 
+                            code={dfsCode} 
+                            language="typescript"
+                            theme={nightOwlLight}
+                        />
+                        <CodeBlock 
+                            code={bfsCode} 
+                            language="typescript"
+                            theme={nightOwlLight}
+                        />
+                    </div>
                     <p>I implemented this approach in a C++ program, but I ran into an issue very quickly: the program would not return. I figured there must be either an infinite loop in this implementation or at the very least a lot of room for optimization. Eventually, I figured it out. I realized that if our first move was, say, to move the 1x1 block in the bottom-left-most corner
                     of the board to the right, then the subtree beginning at the resultant board would also have our initial board as one of its children. If sliding a block to the right is a valid move, then sliding it back is a valid second move, and sliding it to the right again is a valid third move. Thus, an infinite loop had been found.</p>
                     <p>How to deal with this? Well, instead of defining a board’s children as the boards resulting from all <span className="em">possible</span> moves, I began defining children as those boards resulting from all <span className="em">valid</span> moves. For each board, the <span className="em">invalid</span> move is the one that returns the board to its parent’s block configuration.
@@ -59,6 +140,13 @@ export default function Blog() {
                         <img className="horizontal" src={dijkstraTree} alt="Forward and Backward Pointer Visualization"/>
                         <figcaption>Forward and Backward Pointer Visualization</figcaption>
                     </figure>
+                    <div className="codeRow">
+                        <CodeBlock 
+                            code={dijkstraCode} 
+                            language="typescript"
+                            theme={nightOwlLight}
+                        />
+                    </div>
                     </>
                 }
             />
@@ -72,4 +160,3 @@ export default function Blog() {
         </>
     );
 }
-//<img class="horizontal" src="https://getcodify.com/wp-content/uploads/2016/10/Python_logo.jpg" alt="large python logo"></img>

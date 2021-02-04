@@ -28,10 +28,11 @@ article p {
     padding: 20px 3% 0; 
     font-size: .8em;
 }
-article code {
-    font-family: 'Roboto Mono', monospace;
-    font-size: .65em;
-    color: black;
+article .codeRow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 article p a { color: var(--light-color); }
