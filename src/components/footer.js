@@ -2,7 +2,7 @@ import React from "react"
 import { brandSet } from '@coreui/icons'
 import "../styles/Footer.css"
 // components
-import CoreUIIcon from "./cuiicon"
+import CoreUIIcon from "./CUIIcon"
 import ThemePicker from "./ThemePicker"
 import Tooltip from "./Tooltip"
 

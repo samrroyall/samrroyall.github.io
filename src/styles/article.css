@@ -1,6 +1,6 @@
 article {
     width: 95%;
-    padding: 30px 5%;
+    padding: 30px 2.5%;
     border-top: 1px solid var(--light-color);
 }
 article h2 {
@@ -26,7 +26,7 @@ article figcaption {
     font-style: italic;
 }
 article p { 
-    padding: 20px 3% 0; 
+    padding: 2.5% 2% 0; 
     font-size: .8em;
 }
 article .codeRow {
