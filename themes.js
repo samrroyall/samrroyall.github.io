@@ -2,7 +2,7 @@ const themes = {
     "alpine": {
         primary: "#6c687f",
         light: "#9994b8",
-        dark: "#585568"
+        dark: "#585568",
     },
     "boulder": {
         primary: "#d2c5b2",
@@ -58,9 +58,9 @@ const themes = {
         dark: "#e2a528"
     },
     "retro": {
-        primary: "#dad3c1",
-        light: "#918b7d",
-        dark: "#bf616a",
+        primary: "#efe7da",
+        light: "#b9b2a0",
+        dark: "#837d70",
         text: "#1d1b17"
     },
     "pastel": {
@@ -76,8 +76,7 @@ const themes = {
     "shoko": {
         primary: "#ced7e0",
         light: "#81c4dd",
-        dark: "#bf616a",
-        text: "#7599b1"
+        dark: "#7599b1"
     },
     "solarized": {
         primary: "#002b36",
