@@ -1,6 +1,7 @@
 import React from "react"
 import "../../gatsby-browser"
 import { brandSet, freeSet } from '@coreui/icons'
+import { Link } from "gatsby"
 // components
 import CoreUIIcon from "../components/CUIIcon"
 import Footer from "../components/Footer"
@@ -229,7 +230,7 @@ export default function Home() {
               <span>My name is Sam Royall. I'm a software engineer based in Chicago,
               IL. Take a look around and get to know me better!</span>
               <br /><br />
-              <span className="textLight">Change the colorscheme in the page footer!</span>
+              <Link to="/#themePrompt" className="textLight">Change the colorscheme in the page footer!</Link>
               <br /><br />
               <span>Check out my <a href="https://www.overleaf.com/read/zqjpymktwhzf">resume</a>!</span>
             </span>
@@ -345,21 +346,21 @@ export default function Home() {
         content={
           <div className="block">
             <ul className="labelledIconList"> 
-              <li> {puzzleIcon} <span>Solving Problems with Code</span> </li>
-              <li> {mapIcon} <span>Hiking</span> </li>
-              <li> {graphIcon} <span>Rock Climbing</span> </li>
-              <li> {mugIcon} <span>Coffee</span> </li>
-              <li> {gamingControllerIcon} <span>Gaming</span> </li>
-              <li> {soccerBallIcon} <span>Following & Playing Soccer</span> </li>
-              <li> {keyboardIcon} <span>Mechanical Keyboards</span> </li>
-              <li> {headphonesIcon} <span>Music</span> </li>
-              <li> {cpuIcon} <span>Computer Building</span> </li>
+              <li> {puzzleIcon} <h3>Solving Problems with Code</h3> </li>
+              <li> {mapIcon} <h3>Hiking</h3> </li>
+              <li> {graphIcon} <h3>Rock Climbing</h3> </li>
+              <li> {mugIcon} <h3>Coffee</h3> </li>
+              <li> {gamingControllerIcon} <h3>Gaming</h3> </li>
+              <li> {soccerBallIcon} <h3>Following & Playing Soccer</h3> </li>
+              <li> {keyboardIcon} <h3>Mechanical Keyboards</h3> </li>
+              <li> {headphonesIcon} <h3>Music</h3> </li>
+              <li> {cpuIcon} <h3>Computer Building</h3> </li>
             </ul>
           </div>
         }
       />
     </main>
-    <Footer />
+    <Footer currPage=""/>
     </>
   ) 
 }

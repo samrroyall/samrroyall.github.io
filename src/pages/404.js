@@ -13,7 +13,7 @@ export default function _404() {
                     <span role="img" aria-label="clapping hands">&#128079;</span>
                 </div>
             </main>
-            <Footer />
+            <Footer currPage="404/"/>
         </>
     );
 }

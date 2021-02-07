@@ -33,7 +33,7 @@ module.exports = {
       options: {
         fonts: [
           `Roboto Mono`,
-          `Lato`,
+          `Magda`,
         ]
       }
     },

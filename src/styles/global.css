@@ -1,10 +1,16 @@
 /* variables */
 :root {
-    --theme: "alpine";
-    --primary-color: #6c687f;
-    --light-color: #9994b8;
-    --dark-color: #585568;
-    --text-color: #ffffff;
+    --theme: "retro";
+    --primary-color: #efe7da;
+    --light-color: #b9b2a0;
+    --dark-color: #837d70;
+    --text-color: #1d1b17;
+}
+
+@font-face {
+    font-family: "MagdaClean";
+    src: url("../../static/MagdaClean.otf") format("opentype"); /*"Courier New", sans-serif;*/ 
+    font-style: normal;
 }
 
 /* resets */
@@ -12,8 +18,7 @@
     padding: 0;
     margin: 0;
     border: 0;
-    font: inherit;
-    font-family: "Lato", sans-serif; 
+    font-family: "MagdaClean";
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -32,7 +37,7 @@ ol, ul { list-style: none; }
 body {
     background-color: var(--dark-color);
     color: var(--text-color);
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 a { color: var(--primary-color); }
 a:hover { 
@@ -47,13 +52,23 @@ h1 {
     padding: 0 5px;
     display: inline;
     font-family: "Roboto Mono", monospace;
+    font-weight: bold;
     font-size: 1.7em;
     background-color: var(--dark-color);
 }
 h2 {  
     color: var(--light-color);
     font-family: "Roboto Mono", monospace;
+    font-weight: bold;
     font-size: 1.3em;
+}
+h3 {  
+    font-family: "Roboto Mono", monospace;
+    font-size: .88em;
+}
+h4 {  
+    font-family: "Roboto Mono", monospace;
+    font-size: 1em;
 }
 .fine { 
     font-size: .62em; 

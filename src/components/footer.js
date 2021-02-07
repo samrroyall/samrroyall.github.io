@@ -1,12 +1,21 @@
 import React from "react"
-import { brandSet } from '@coreui/icons'
+import { brandSet, freeSet } from "@coreui/icons"
+import { Link } from "gatsby"
 import "../styles/Footer.css"
 // components
 import CoreUIIcon from "./CUIIcon"
 import ThemePicker from "./ThemePicker"
 import Tooltip from "./Tooltip"
 
-export default function Footer() {
+export default function Footer(props) {
+    let returnToTopLink = (
+        <Link to={"/"+props.currPage} id="returnToTop">
+            <CoreUIIcon content={freeSet.cilArrowThickFromBottom}
+                size="xl"
+                name="return to top"
+            />
+        </Link>
+    )
     let githubIconLink = (
         <a href="https://github.com/samrroyall/">
             <CoreUIIcon content={brandSet.cibGithub} 
@@ -80,11 +89,12 @@ export default function Footer() {
                     copyText="fjallraver#2825"
                     displayText="Copied!"
                 />
+                {returnToTopLink}
             </div>
             <div id="theme">
-                <span className="fine textWhite" id="themePrompt">
+                <label htmlFor="themeDropdown" className="fine textWhite" id="themePrompt">
                     Choose your favorite theme!
-                </span>
+                </label>
                 <ThemePicker />
             </div>
             <div className="fine" id="copyright">

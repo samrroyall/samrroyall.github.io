@@ -10,18 +10,19 @@ class ThemePicker extends React.Component {
             var currTheme = document.documentElement.style.getPropertyValue("--theme");
         } else {
             // default theme is alpine
-            var currTheme = "alpine";
+            var currTheme = "retro";
         }
         this.state = { theme: currTheme };
         this.changeTheme = this.changeTheme.bind(this);
     }
 
     changeTheme(e) {
+        let newTheme = e.target.value; 
+        if (newTheme === "") return;
         // `document` error check must be available for deployment
         if (typeof document !== `undefined`) {
-            var newTheme = e.target.value; 
             this.setState({theme: newTheme});
-            var colorVals = themes[newTheme]; // get new theme's color values
+            let colorVals = themes[newTheme]; // get new theme's color values
 
             // set CSS vars with new color values
             document.documentElement.style.setProperty("--theme", newTheme);
@@ -38,35 +39,17 @@ class ThemePicker extends React.Component {
     }
 
     render() {
+        let options = [];
+        let sortedThemes = Object.keys(themes).sort()
+        for (let i = 0; i < sortedThemes.length; i++) {
+            let theme = sortedThemes[i];
+            let option = <option key={i+1} value={theme}>{theme.replaceAll("-"," ")}</option>;
+            options.push(option);
+        }
         return (
-            <select id="themeDropdown" 
-                value={this.state.theme}
-                onChange={(e) => this.changeTheme(e)}
-            >
-                <option>alpine</option>
-                <option>boulder</option>
-                <option>cyberspace</option>
-                <option value="miami-nights">miami nights</option>
-                <option value="modern-dolch">modern dolch</option>
-                <option>monokai</option>
-                <option>muted</option>
-                <option value="muted-mr-sleeves">muted mr. sleeves</option>
-                <option value="night-runner">night runner</option>
-                <option>pastel</option>
-                <option value="red-dragon">red dragon</option>
-                <option value="red-samurai">red samurai</option>
-                <option>retro</option>
-                <option>serika</option>
-                <option>shoko</option>
-                <option>solarized</option>
-                <option>strawberry</option>
-                <option value="synthwave-84-1">synthwave '84 #1</option>
-                <option value="synthwave-84-2">synthwave '84 #2</option>
-                <option>terminal</option>
-                <option>vaporwave</option>
-                <option value="80s-after-dark">80s after dark</option>
-                <option>8008</option>
-                <option>9009</option>
+            <select id="themeDropdown" onChange={(e) => this.changeTheme(e)}>
+                <option key={0} value="" />
+                {options}
             </select>
         );
     }

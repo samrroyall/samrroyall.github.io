@@ -94,9 +94,9 @@ export default function Projects() {
           <div className="sectionBody">
             <div className="block">
               <h2>Description</h2>
-              <p><span className="em">info-rm</span> &nbsp; is a stats aggregator for soccer 
+              <p><span className="em">info-rm</span> is a stats aggregator for soccer 
               players in Europe's top domestic leagues and international tournaments. See 
-              this &nbsp;<Link to="/blog/#searchArticle">blog post</Link>&nbsp; to learn about the search algorithm!</p>
+              this <Link to="/blog/#searchArticle">blog post</Link> to learn about the search algorithm!</p>
             </div>
             <div className="block">
               <h2>Technologies</h2>
@@ -122,8 +122,8 @@ export default function Projects() {
           <div className="sectionBody">
             <div className="block">
               <h2>Description</h2>
-              <p><span className="em">Klotski Solver</span> &nbsp; is a shortest-path Klotski sliding-block
-              puzzle solver. See this &nbsp;<Link to="/blog/#dijkstraArticle">blog post</Link>&nbsp; to learn more about the 
+              <p><span className="em">Klotski Solver</span> is a shortest-path Klotski sliding-block
+              puzzle solver. See this <Link to="/blog/#dijkstraArticle">blog post</Link> to learn more about the 
               algorithm behind the solution!</p>
             </div>
             <div className="block">
@@ -139,7 +139,7 @@ export default function Projects() {
         }
       />
     </main>
-    <Footer />
+    <Footer currPage="projects/"/>
     </>
   );
 }
