@@ -102,7 +102,7 @@ export default function Footer(props) {
                 &nbsp;&nbsp; © Sam Royall. All Rights Reserved.
             </div>
             <div id="poweredBy">
-                <span className="fine textWhite">Powered by</span>
+                <span className="fine">Powered by</span>
                 {gatsbyIcon}
                 {reactIcon}
                 {nodeIcon}

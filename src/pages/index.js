@@ -346,7 +346,7 @@ export default function Home() {
         content={
           <div className="block">
             <ul className="labelledIconList"> 
-              <li> {puzzleIcon} <h3>Solving Problems with Code</h3> </li>
+              <li> {puzzleIcon} <h3>Solving Problems w/ Code</h3> </li>
               <li> {mapIcon} <h3>Hiking</h3> </li>
               <li> {graphIcon} <h3>Rock Climbing</h3> </li>
               <li> {mugIcon} <h3>Coffee</h3> </li>
