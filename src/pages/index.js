@@ -20,139 +20,140 @@ import profilePicture from "../../static/images/profile-cropped.jpg"
 export default function Home() {
   let cPlusPlusIcon = (
     <CoreUIIcon content={brandSet.cibCplusplus} 
-      size="2xl" 
+      size="3xl" 
       name="c++ logo" 
       title="c++" 
     />
   );
   let pythonIcon = (
     <CoreUIIcon content={brandSet.cibPython} 
-      size="2xl" 
+      size="3xl" 
       name="python logo"
       title="python"
     />
   );
   let rustIcon = (
     <CoreUIIcon content={brandSet.cibRust} 
-      size="2xl" 
+      size="3xl" 
       name="rust logo" 
       title="rust" 
     />
   );
   let javascriptIcon = (
     <CoreUIIcon content={brandSet.cibJavascript} 
-      size="2xl" 
+      size="3xl" 
       name="javascript logo"
       title="javascript"
     />
   );
   let typescriptIcon = (
     <CoreUIIcon content={brandSet.cibTypescript} 
-      size="2xl" 
+      size="3xl" 
       name="typescript logo"
       title="typescript"
     />
   );
   let gitIcon = (
     <CoreUIIcon content={brandSet.cibGit} 
-      size="2xl" 
+      size="3xl" 
       name="git logo"
       title="git"
     />
   );
   let linuxIcon = (
     <CoreUIIcon content={brandSet.cibLinux} 
-      size="2xl" 
+      size="3xl" 
       name="linux logo"
       title="linux"
     />
   );
   let awsIcon = (
     <CoreUIIcon content={brandSet.cibAmazonAws} 
-      size="2xl" 
+      size="3xl" 
       name="AWS logo"
       title="AWS"
     />
   );
   let postgresIcon = (
     <CoreUIIcon content={brandSet.cibPostgresql} 
-      size="2xl" 
+      size="3xl" 
       name="postgres logo"
       title="postgres"
     />
   );
   let mysqlIcon = (
     <CoreUIIcon content={brandSet.cibMysql} 
-      size="2xl" 
+      size="3xl" 
       name="mySQL logo"
       title="mySQL"
     />
   );
   let sqliteIcon = (
     <span title="sqlite" 
+      id="sqliteIconXl"
       aria-label="sqlite logo">
       {sqliteSVG}
     </span>
   );
   let reactIcon = (
     <CoreUIIcon content={brandSet.cibReact} 
-      size="2xl" 
+      size="3xl" 
       name="react logo"
       title="react"
     />
   );
   let gatsbyIcon = (
     <CoreUIIcon content={brandSet.cibGatsby} 
-      size="2xl" 
+      size="3xl" 
       name="gatsby logo"
       title="gatsby"
     />
   );
   let nodeIcon = (
     <CoreUIIcon content={brandSet.cibNodeJs} 
-      size="2xl" 
+      size="3xl" 
       name="node.js logo"
       title="node.js"
     />
   );
   let jqueryIcon = (
     <CoreUIIcon content={brandSet.cibJquery} 
-      size="2xl" 
+      size="3xl" 
       name="jquery logo"
       title="jquery"
     />
   );
   let flaskIcon = (
     <CoreUIIcon content={brandSet.cibFlask} 
-      size="2xl" 
+      size="3xl" 
       name="flask logo"
       title="flask"
     />
   );
   let djangoIcon = (
     <CoreUIIcon content={brandSet.cibDjango} 
-      size="2xl" 
+      size="3xl" 
       name="django logo"
       title="django"
     />
   );
   let htmlIcon = (
     <CoreUIIcon content={brandSet.cibHtml5Shield} 
-      size="2xl" 
+      size="3xl" 
       name="HTML logo"
       title="HTML"
     />
   );
   let cssIcon = (
     <CoreUIIcon content={brandSet.cibCss3Shiled} 
-      size="2xl" 
+      size="3xl" 
       name="CSS logo"
       title="CSS"
     />
   );
   let bootstrapIcon = (
     <CoreUIIcon content={brandSet.cibBootstrap}
-      size="2xl"
+      size="3xl"
       name="bootstrap logo"
       title="bootstrap"
     />    
@@ -223,16 +224,19 @@ export default function Home() {
           <div className="bio">
             <img src={profilePicture} 
               className="circle" 
-              height="300px"
               alt="profile picture" 
             />
             <span className="bioText">
               <span>My name is Sam Royall. I'm a software engineer based in Chicago,
               IL. Take a look around and get to know me better!</span>
               <br /><br />
-              <Link to="/#themePrompt" className="textLight">Change the colorscheme in the page footer!</Link>
+              <Link to="/#themePrompt" 
+                className="textLight" 
+                id="themeLink">
+                  Change the colorscheme in the page footer!
+              </Link>
               <br /><br />
-              <span>Check out my <a href="https://www.overleaf.com/read/zqjpymktwhzf">resume</a>!</span>
+              <span>Check out my <a href="https://www.overleaf.com/read/zqjpymktwhzf" target="_blank">resume</a>!</span>
             </span>
           </div>
         }
@@ -260,37 +264,7 @@ export default function Home() {
         }
       />
       <Section 
-        pos={2} 
-        title="Experience" 
-        content={
-          <>
-          <ResumeEntry
-            icon={aonIcon}
-            iconLabel="AON logo"
-            title="Stroz Friedberg, an AON Company"
-            subtitle="DFIR Consultant, Cyber Associate"
-            date={<span>Aug. '19 -<br/>Dec. '20</span>}
-          />
-          <ResumeEntry
-            icon={aonIcon}
-            iconLabel="AON logo"
-            title="Stroz Friedberg, an AON Company"
-            subtitle="Cyber Summer Associate"
-            date={<span>Jun. '18 -<br/>Aug '18</span>}
-          />
-          <ResumeEntry
-            icon={tiberIcon}
-            iconLabel="tiber solutions logo"
-            title="Tiber Solutions"
-            subtitle="Database Intern"
-            date="6/17-9/17"
-            date={<span>Jun. '17 -<br/>Sep. '17</span>}
-          />
-          </>
-        }
-      />
-      <Section 
-        pos={3}
+        pos={2}
         title="Skills" 
         content={
           <>
@@ -341,7 +315,7 @@ export default function Home() {
         }
       />
       <Section 
-        pos={4} 
+        pos={3} 
         title="Interests" 
         content={
           <div className="block">
@@ -351,12 +325,42 @@ export default function Home() {
               <li> {graphIcon} <h3>Rock Climbing</h3> </li>
               <li> {mugIcon} <h3>Coffee</h3> </li>
               <li> {gamingControllerIcon} <h3>Gaming</h3> </li>
-              <li> {soccerBallIcon} <h3>Following & Playing Soccer</h3> </li>
+              <li> {soccerBallIcon} <h3>The Beautiful Game</h3> </li>
               <li> {keyboardIcon} <h3>Mechanical Keyboards</h3> </li>
               <li> {headphonesIcon} <h3>Music</h3> </li>
               <li> {cpuIcon} <h3>Computer Building</h3> </li>
             </ul>
           </div>
+        }
+      />
+      <Section 
+        pos={4} 
+        title="Experience" 
+        content={
+          <>
+          <ResumeEntry
+            icon={aonIcon}
+            iconLabel="AON logo"
+            title="Stroz Friedberg, an AON Company"
+            subtitle="DFIR Consultant, Cyber Associate"
+            date={<span>Aug. '19 -<br/>Dec. '20</span>}
+          />
+          <ResumeEntry
+            icon={aonIcon}
+            iconLabel="AON logo"
+            title="Stroz Friedberg, an AON Company"
+            subtitle="Cyber Summer Associate"
+            date={<span>Jun. '18 -<br/>Aug '18</span>}
+          />
+          <ResumeEntry
+            icon={tiberIcon}
+            iconLabel="tiber solutions logo"
+            title="Tiber Solutions"
+            subtitle="Database Intern"
+            date="6/17-9/17"
+            date={<span>Jun. '17 -<br/>Sep. '17</span>}
+          />
+          </>
         }
       />
     </main>

@@ -87,7 +87,8 @@ export default function Blog() {
         <main>
             <Article 
                 id="dijkstraArticle"
-                title={<span>Using Dijkstra's Algorithm to Solve Klotski Puzzles</span>}
+                pos={0}
+                title="Using Dijkstra's Algorithm to Solve Klotski Puzzles"
                 content={
                     <>
                     <p>In Summer 2020, my roommate and I watched a Computerphile <a href="https://www.youtube.com/watch?v=G_UYXzGuqvM">video</a> in which Computer Science professor Thorsten Altenkirch created a Sudoku solver in Python. The video was informative and entertaining, and Altenkirch's program was interesting and elegant. Toward the end of the video, however, Altenkirch introduced a "tricky" puzzle called <span className="em">Klotski</span>.
@@ -152,7 +153,8 @@ export default function Blog() {
             />
             <Article 
                 id="searchArticle"
-                title={<span>A Trie-based Search Algorithm for Soccer</span>}
+                pos={1}
+                title="A Trie-based Search Algorithm for Soccer"
                 content={<p></p>}
             />
         </main>

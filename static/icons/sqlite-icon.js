@@ -4,8 +4,6 @@ const sqlite = (
     <svg version="1.0" 
         className="icon"
         xmlns="http://www.w3.org/2000/svg"
-        width="32px"  
-        height="32px" 
         viewBox="0 0 128 128">
         <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
         <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"

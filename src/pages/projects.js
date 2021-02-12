@@ -49,7 +49,7 @@ export default function Projects() {
     />
   );
   let sqliteIcon = (
-    <span title="sqlite" aria-label="sqlite logo">
+    <span id="sqliteIconLg" title="sqlite" aria-label="sqlite logo">
       {sqlite}
     </span>
   );

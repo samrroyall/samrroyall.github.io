@@ -6,11 +6,12 @@ class ThemePicker extends React.Component {
     constructor(props) {
         super(props);
         // `document` error check must be available for deployment
+        let currTheme;
         if (typeof document !== `undefined` ) {
-            var currTheme = document.documentElement.style.getPropertyValue("--theme");
+            currTheme = document.documentElement.style.getPropertyValue("--theme");
         } else {
             // default theme is alpine
-            var currTheme = "retro";
+            currTheme = "retro";
         }
         this.state = { theme: currTheme };
         this.changeTheme = this.changeTheme.bind(this);

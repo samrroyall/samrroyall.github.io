@@ -3,9 +3,13 @@ article {
     padding: 30px 2.5%;
     border-top: 1px solid var(--light-color);
 }
+article.mostRecentPost {
+    margin-top: 3vh;
+    border: 0;
+}
 article h2 {
     max-width: 100%;
-    padding: 0 0 5px 10px;
+    padding: 5px 0 5px 10px;
     color: var(--text-color);
     background-color: var(--dark-color);
     border-left: 5px solid var(--light-color);

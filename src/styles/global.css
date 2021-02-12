@@ -53,25 +53,26 @@ h1 {
     display: inline;
     font-family: "Roboto Mono", monospace;
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: calc(35px + 1vw);
     background-color: var(--dark-color);
 }
 h2 {  
+    padding: 0 5px;
     color: var(--light-color);
     font-family: "Roboto Mono", monospace;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: calc(24px + 1vw);
 }
 h3 {  
     font-family: "Roboto Mono", monospace;
-    font-size: .88em;
+    font-size: calc(15px + .8vw);
 }
 h4 {  
     font-family: "Roboto Mono", monospace;
     font-size: 1em;
 }
 .fine { 
-    font-size: .62em; 
+    font-size: calc(12px + .8vw); 
     font-weight: 400;
 }
 .textWhite { color: #ffffff; }
@@ -100,10 +101,11 @@ img.circle {
 
 /* main */
 main {
+    margin-top: 4vh;
+    width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: var(--primary-color);
-    margin-top: 40px;
-    position: relative;
 }

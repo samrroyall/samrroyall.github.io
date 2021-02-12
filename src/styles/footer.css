@@ -1,7 +1,8 @@
 /* footer */
 footer {
+    min-height: 75vh;
     width: 100%;
-    padding: 30px 0;
+    padding: 10vh 0;
 }
 #theme { text-align: center; }
 #copyright { 
@@ -29,15 +30,18 @@ footer {
     display: flex;
     justify-content: center;
 }
-#poweredBy span { margin-right: 5px; }
+#poweredBy span { 
+    display: flex;
+    align-items: center;
+}
+#poweredBy span.fine { 
+    height: 100%;
+    margin-right: 5px; 
+    line-height: 1.5;
+}
 #poweredBy .c-icon { 
-    vertical-align: top;
-    margin: 0 3px;
+    margin: 0 5px;
     fill: var(--text-color); 
 }
-#returnToTop:hover {
-    color: var(--light-color);
-}
-#returnToTop {
-    color: var(--text-color);
-}
+#returnToTop:hover { color: var(--light-color); }
+#returnToTop { color: var(--text-color); }

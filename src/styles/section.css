@@ -1,6 +1,6 @@
 /* section */ 
 section {
-    min-height: 500px;
+    min-height: 92vh;
     padding: 10px; 
     text-align: center;
 }
@@ -9,29 +9,38 @@ section a { color: var(--light-color); }
 
 /* bio section */
 .header { 
+    min-height: 95vh;
     width: 100%;
     border-bottom: 1px solid var(--light-color);
 }
+.header .sectionTitle {
+    padding: 5vh 0 2vh;
+}
 .bio {
     margin: 30px auto -30px;
+    padding: 0 5%; 
     display: flex;
     flex-wrap: wrap;
 }
 .bio a { color: var(--light-color); }
 .bio a:hover { color: var(--dark-color); }
-.bio img { margin: 0 auto 30px; }
+.bio img { 
+    margin: 0 auto 30px; 
+}
 .bio span.bioText {
     margin: auto;
     padding: 20px;
-    height: 200px;
-    max-width: 350px;
-    font-size: .8em;
+    font-size: calc(14px + 1.3vw);
+}
+#themeLink {
+    font-weight: bold;
+    font-size: calc(16px + 1vw);
 }
 
 /* default section styling */
 .sectionTitle {
-    height: 50px;
-    margin: 50px 0 25px;
+    min-height: 5vh;
+    padding: 7vh 0;
 }
 .sectionTitle a:hover { color: var(--text-color); }
 .sectionTitle a {
@@ -52,7 +61,7 @@ section a { color: var(--light-color); }
     text-align: center;
 }
 .wrapper {
-    min-height: 400px;
+    min-height: 60vh;
     padding: 0 0 50px;
     display: flex;
     justify-content: space-evenly;
@@ -61,7 +70,9 @@ section a { color: var(--light-color); }
 }
 .block { margin: 20px 0; }
 .block h2 { margin: 10px; }
-.block p { font-size: .8em; }
+.block p { 
+    font-size: calc(14px + .6vw); 
+}
 
 /* icons */
 .iconRow { font-size: 2.3em; }
@@ -80,6 +91,14 @@ section a { color: var(--light-color); }
     display: inline-block;
     margin-left: 20px; 
 }
+#sqliteIconXl svg {
+    height: 45px !important;
+    width: 45px !important;
+}
+#sqliteIconLg svg {
+    height: 32px !important;
+    width: 32px !important;
+}
 .labelledIconList svg { 
     margin-left: 0px;
     color: var(--light-color);
@@ -96,6 +115,12 @@ section a { color: var(--light-color); }
     section.notFirstRow { border-top: 1px solid var(--light-color); }
     section.notFirstCol { border-left: 1px solid var(--light-color); }
     .sectionBody { width: 50%; }
+    .bio span.bioText {
+        max-width: 50%;
+    }
+    .bio img {
+        height: 50%;
+    }
 }
 @media only screen and (max-width: 1023.9px) {
     section { 
@@ -104,4 +129,10 @@ section a { color: var(--light-color); }
     }
     section:first-of-type { border: 0; }
     .sectionBody { width: 70%; }
+    .bio span.bioText {
+        max-width: 90%;
+    }
+    .bio img {
+        height: 250px;
+    }
 }

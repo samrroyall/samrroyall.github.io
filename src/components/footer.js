@@ -11,69 +11,74 @@ export default function Footer(props) {
     let returnToTopLink = (
         <Link to={"/"+props.currPage} id="returnToTop">
             <CoreUIIcon content={freeSet.cilArrowThickFromBottom}
-                size="xl"
+                size="2xl"
                 name="return to top"
+                title="Return to Top"
             />
         </Link>
     )
     let githubIconLink = (
-        <a href="https://github.com/samrroyall/">
+        <a href="https://github.com/samrroyall/" target="_blank">
             <CoreUIIcon content={brandSet.cibGithub} 
-                size="xl" 
-                name="github" 
+                size="2xl" 
+                name="GitHub" 
             />
         </a>
     );
     let linkedInIconLink = (
-        <a href="https://www.linkedin.com/in/samrroyall">
+        <a href="https://www.linkedin.com/in/samrroyall" target="_blank">
             <CoreUIIcon content={brandSet.cibLinkedin} 
-                size="xl" 
+                size="2xl" 
                 name="linkedin" 
+                title="LinkedIn" 
             />
         </a>
     );
     let angellistIconLink = (
-        <a href="https://angel.co/u/samrroyall">
+        <a href="https://angel.co/u/samrroyall" target="_blank">
             <CoreUIIcon content={brandSet.cibAngellist} 
-                size="xl" 
+                size="2xl" 
                 name="angellist" 
+                title="Angel List" 
             />
         </a>
     );
     let leetcodeIconLink = (
-        <a href="https://leetcode.com/fjallraver/">
+        <a href="https://leetcode.com/fjallraver/" target="_blank">
             <CoreUIIcon content={brandSet.cibLeetcode} 
-                size="xl" 
+                size="2xl" 
                 name="leetcode" 
+                title="Leetcode" 
             />
         </a>
     );
     let discordIcon = (
         <CoreUIIcon content={brandSet.cibDiscord} 
             id="discord" 
-            size="xl" 
+            size="2xl" 
             name="discord"
+            title="Discord"
         />
     )
     let gatsbyIcon = (
         <CoreUIIcon content={brandSet.cibGatsby} 
-            size="md" 
+            size="lg" 
             name="gatsby logo"
-            title="gatsby"
+            title="Gatsby"
         />
     );
     let reactIcon = (
         <CoreUIIcon content={brandSet.cibReact} 
-            size="md" 
+            size="lg" 
             name="react logo"
-            title="react"
+            title="ReactJS"
         />
     );
     let nodeIcon = (
         <CoreUIIcon content={brandSet.cibNodeJs} 
-            size="md" 
+            size="lg" 
             name="node.js logo"
-            title="node.js"
+            title="Node.js"
         />
     );
 
