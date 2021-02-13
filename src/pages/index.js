@@ -32,13 +32,6 @@ export default function Home() {
       title="python"
     />
   );
-  let rustIcon = (
-    <CoreUIIcon content={brandSet.cibRust} 
-      size="3xl" 
-      name="rust logo" 
-      title="rust" 
-    />
-  );
   let javascriptIcon = (
     <CoreUIIcon content={brandSet.cibJavascript} 
       size="3xl" 
@@ -273,9 +266,6 @@ export default function Home() {
             <div className="iconRow">
               {cPlusPlusIcon}
               {pythonIcon}
-              {rustIcon}
-            </div>
-            <div className="iconRow">
               {javascriptIcon}
               {typescriptIcon}
             </div>

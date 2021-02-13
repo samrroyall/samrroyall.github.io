@@ -3,8 +3,6 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 5vh;
-    min-height: calc(40px + 1vw);
     padding: 1vh 0;
     width: 100%;
     background-color: var(--light-color);
