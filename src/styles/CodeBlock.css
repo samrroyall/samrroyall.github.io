@@ -15,4 +15,4 @@ pre {
     user-select: none;
     opacity: 0.5;
 }
-.lineContent { display: table-cell };
+.lineContent { display: table-cell; }

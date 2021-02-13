@@ -1,11 +1,11 @@
 import React from "react"
 import { brandSet, freeSet } from "@coreui/icons"
 import { Link } from "gatsby"
-import "../styles/Footer.css"
 // components
 import CoreUIIcon from "./CUIIcon"
 import ThemePicker from "./ThemePicker"
 import Tooltip from "./Tooltip"
+import "../styles/Footer.css"
 
 export default function Footer(props) {
     let returnToTopLink = (
