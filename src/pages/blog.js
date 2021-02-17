@@ -1,15 +1,16 @@
-import React from "react"
-import nightOwlLight from "prism-react-renderer/themes/nightOwlLight"
+import React from "react";
+import nightOwlLight from "prism-react-renderer/themes/nightOwlLight";
 // components
-import Article from "../components/Article"
-import CodeBlock from "../components/CodeBlock"
-import Footer from "../components/Footer"
-import Nav from "../components/Nav"
+import Article from "../components/Article";
+import CodeBlock from "../components/CodeBlock";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+import SEO from "../components/SEO";
 // iamges
-import boardString from "../../static/images/board-string.png"
-import defaultKlotskiBoard from "../../static/images/default-klotski.png"
-import dijkstraTree from "../../static/images/dijkstra-tree.png"
-import klotskiTree from "../../static/images/klotski-tree-1.png"
+import boardString from "../../static/images/board-string.png";
+import defaultKlotskiBoard from "../../static/images/default-klotski.png";
+import dijkstraTree from "../../static/images/dijkstra-tree.png";
+import klotskiTree from "../../static/images/klotski-tree-1.png";
 
 const dfsCode = (
 `function DFS(root: Node): void {
@@ -83,6 +84,7 @@ export default function Blog() {
 
     return (
         <>
+        <SEO title="Sam Royall - Blog" />
         <Nav />
         <main>
             <Article 

@@ -8,6 +8,7 @@ import Footer from "../components/Footer"
 import Nav from "../components/Nav"
 import ResumeEntry from "../components/ResumeEntry"
 import Section from "../components/Section"
+import SEO from "../components/SEO"
 // icons
 import aonIcon from "../../static/icons/aon-icon"
 import dojoIcon from "../../static/icons/dojo-icon"
@@ -208,6 +209,7 @@ export default function Home() {
                 
   return (
     <>
+    <SEO />
     <Nav currPage="home" />
     <main>
       <Section 

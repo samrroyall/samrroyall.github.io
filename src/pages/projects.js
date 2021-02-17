@@ -1,16 +1,17 @@
 import React from "react";
-import { brandSet } from "@coreui/icons"
-import { Link } from "gatsby"
+import { brandSet } from "@coreui/icons";
+import { Link } from "gatsby";
 // components
-import CoreUIIcon from "../components/CUIIcon"
+import CoreUIIcon from "../components/CUIIcon";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Section from "../components/Section";
+import SEO from "../components/SEO";
 // icons
-import sqlite from "../../static/icons/sqlite-icon"
+import sqlite from "../../static/icons/sqlite-icon";
 // images
-import klotski from "../../static/images/klotski-solver.png"
-import inform from "../../static/images/info-rm.png"
+import klotski from "../../static/images/klotski-solver.png";
+import inform from "../../static/images/info-rm.png";
 
 export default function Projects() {
   let flaskIcon = (
@@ -84,6 +85,7 @@ export default function Projects() {
 
   return (
     <>
+    <SEO title="Sam Royall - Projects" />
     <Nav currPage="projects"/>
     <main>
       <Section 

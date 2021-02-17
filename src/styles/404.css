@@ -1,6 +1,6 @@
 #notFoundWrapper {
-    padding: 30px;
-    margin: 0 auto;
+    margin: 5vh auto 0;
+    height: 90vh; 
     text-align: center;
     font-size: 2em;
 }
