@@ -91,9 +91,11 @@ section a { color: var(--light-color); }
     display: inline-block;
     margin-left: 20px; 
 }
+
 #sqliteIconXl svg {
     height: 45px !important;
     width: 45px !important;
+    margin: 0;
 }
 #sqliteIconLg svg {
     height: 32px !important;

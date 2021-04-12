@@ -19,194 +19,41 @@ import uchicagoIcon from "../../static/icons/uchicago-icon"
 import profilePicture from "../../static/images/profile-cropped.jpg" 
 
 export default function Home() {
-  let cPlusPlusIcon = (
-    <CoreUIIcon content={brandSet.cibCplusplus} 
-      size="3xl" 
-      name="c++ logo" 
-      title="c++" 
-    />
-  );
-  let pythonIcon = (
-    <CoreUIIcon content={brandSet.cibPython} 
-      size="3xl" 
-      name="python logo"
-      title="python"
-    />
-  );
-  let javascriptIcon = (
-    <CoreUIIcon content={brandSet.cibJavascript} 
-      size="3xl" 
-      name="javascript logo"
-      title="javascript"
-    />
-  );
-  let typescriptIcon = (
-    <CoreUIIcon content={brandSet.cibTypescript} 
-      size="3xl" 
-      name="typescript logo"
-      title="typescript"
-    />
-  );
-  let gitIcon = (
-    <CoreUIIcon content={brandSet.cibGit} 
-      size="3xl" 
-      name="git logo"
-      title="git"
-    />
-  );
-  let linuxIcon = (
-    <CoreUIIcon content={brandSet.cibLinux} 
-      size="3xl" 
-      name="linux logo"
-      title="linux"
-    />
-  );
-  let awsIcon = (
-    <CoreUIIcon content={brandSet.cibAmazonAws} 
-      size="3xl" 
-      name="AWS logo"
-      title="AWS"
-    />
-  );
-  let postgresIcon = (
-    <CoreUIIcon content={brandSet.cibPostgresql} 
-      size="3xl" 
-      name="postgres logo"
-      title="postgres"
-    />
-  );
-  let mysqlIcon = (
-    <CoreUIIcon content={brandSet.cibMysql} 
-      size="3xl" 
-      name="mySQL logo"
-      title="mySQL"
-    />
-  );
-  let sqliteIcon = (
-    <span title="sqlite" 
-      id="sqliteIconXl"
-      aria-label="sqlite logo">
-      {sqliteSVG}
-    </span>
-  );
-  let reactIcon = (
-    <CoreUIIcon content={brandSet.cibReact} 
-      size="3xl" 
-      name="react logo"
-      title="react"
-    />
-  );
-  let gatsbyIcon = (
-    <CoreUIIcon content={brandSet.cibGatsby} 
-      size="3xl" 
-      name="gatsby logo"
-      title="gatsby"
-    />
-  );
-  let nodeIcon = (
-    <CoreUIIcon content={brandSet.cibNodeJs} 
-      size="3xl" 
-      name="node.js logo"
-      title="node.js"
-    />
-  );
-  let jqueryIcon = (
-    <CoreUIIcon content={brandSet.cibJquery} 
-      size="3xl" 
-      name="jquery logo"
-      title="jquery"
-    />
-  );
-  let flaskIcon = (
-    <CoreUIIcon content={brandSet.cibFlask} 
-      size="3xl" 
-      name="flask logo"
-      title="flask"
-    />
-  );
-  let djangoIcon = (
-    <CoreUIIcon content={brandSet.cibDjango} 
-      size="3xl" 
-      name="django logo"
-      title="django"
-    />
-  );
-  let htmlIcon = (
-    <CoreUIIcon content={brandSet.cibHtml5Shield} 
-      size="3xl" 
-      name="HTML logo"
-      title="HTML"
-    />
-  );
-  let cssIcon = (
-    <CoreUIIcon content={brandSet.cibCss3Shiled} 
-      size="3xl" 
-      name="CSS logo"
-      title="CSS"
-    />
-  );
-  let bootstrapIcon = (
-    <CoreUIIcon content={brandSet.cibBootstrap}
-      size="3xl"
-      name="bootstrap logo"
-      title="bootstrap"
-    />    
-  )
-  let puzzleIcon = (
-    <CoreUIIcon content={freeSet.cilPuzzle}
-      size="2xl"
-      name="puzzle icon"
-    /> 
-  );    
-  let mapIcon = (
-    <CoreUIIcon content={freeSet.cilMap}
-      size="2xl"
-      name="map icon"
-    />
-  );
-  let graphIcon = (
-    <CoreUIIcon content={freeSet.cilGraph}
-      size="2xl"
-      name="graph icon"
-    />
-  );
-  let mugIcon = (
-    <CoreUIIcon content={freeSet.cilCoffee}
-      size="2xl"
-      name="mug icon"
-    />
-  );
-  let gamingControllerIcon = (
-    <CoreUIIcon content={freeSet.cilGamepad}
-      size="2xl"
-      name="gaming controller icon"
-    />
-  );
-  let soccerBallIcon = (
-    <CoreUIIcon content={freeSet.cilSoccer}
-      size="2xl"
-      name="soccer ball icon"
-    /> 
-  );
-  let keyboardIcon = (
-    <CoreUIIcon content={freeSet.cilKeyboard}
-      size="2xl"
-      name="keyboard icon"
-    />
-  );
-  let headphonesIcon = (
-    <CoreUIIcon content={freeSet.cilHeadphones}
-      size="2xl"
-      name="headphones icon"
-    />
-  );
-  let cpuIcon = (
-    <CoreUIIcon content={freeSet.cilMemory}
-      size="2xl"
-      name="CPU icon"
-    />
-  );
-                
+  // language icons
+  const cPlusPlusIcon = <CoreUIIcon content={brandSet.cibCplusplus} name="c++ logo" title="c++"  size="3xl"/>;
+  const pythonIcon = <CoreUIIcon content={brandSet.cibPython} name="python logo" title="python" size="3xl"/>;
+  const javascriptIcon = <CoreUIIcon content={brandSet.cibJavascript} name="javascript logo" title="javascript" size="3xl"/>;
+  const typescriptIcon = <CoreUIIcon content={brandSet.cibTypescript} name="typescript logo" title="typescript" size="3xl"/>;
+  // technologies icons
+  const gitIcon = <CoreUIIcon content={brandSet.cibGit} name="git logo" title="git" size="3xl"/>;
+  const linuxIcon = <CoreUIIcon content={brandSet.cibLinux} name="linux logo" title="linux" size="3xl"/>;
+  const awsIcon = <CoreUIIcon content={brandSet.cibAmazonAws} name="AWS logo" title="AWS" size="3xl"/>;
+  const postgresIcon = <CoreUIIcon content={brandSet.cibPostgresql} name="postgres logo" title="postgres" size="3xl"/>;
+  const mysqlIcon = <CoreUIIcon content={brandSet.cibMysql}  name="mySQL logo" title="mySQL" size="3xl"/>;
+  const sqliteIcon = <span title="sqlite" id="sqliteIconXl" aria-label="sqlite logo"> {sqliteSVG} </span>;
+  const mongoIcon = <CoreUIIcon content={brandSet.cibMongodb}  name="mongo logo" title="mongoDB" size="3xl"/>;
+  // web icons
+  const reactIcon = <CoreUIIcon content={brandSet.cibReact} name="react logo" title="react" size="3xl"/>;
+  const socketIcon = <CoreUIIcon content={brandSet.cibSocketIo} name="socket.io logo" title="socket.io" size="3xl"/>;
+  const gatsbyIcon = <CoreUIIcon content={brandSet.cibGatsby} name="gatsby logo" title="gatsby" size="3xl"/>;
+  const nodeIcon =  <CoreUIIcon content={brandSet.cibNodeJs} name="node.js logo" title="node.js" size="3xl"/>;
+  const jqueryIcon = <CoreUIIcon content={brandSet.cibJquery} size="3xl" name="jquery logo" title="jquery"/>;
+  const flaskIcon = <CoreUIIcon content={brandSet.cibFlask} name="flask logo" title="flask" size="3xl"/>;
+  const djangoIcon = <CoreUIIcon content={brandSet.cibDjango} name="django logo title="django size="3xl"/>;
+  const htmlIcon = <CoreUIIcon content={brandSet.cibHtml5Shield} name="HTML logo" title="HTML" size="3xl"/>;
+  const cssIcon = <CoreUIIcon content={brandSet.cibCss3Shiled} name="CSS logo" title="CSS" size="3xl"/>;
+  const bootstrapIcon = <CoreUIIcon content={brandSet.cibBootstrap} name="bootstrap logo" title="bootstrap" size="3xl"/>;
+  // interests icons
+  const puzzleIcon = <CoreUIIcon content={freeSet.cilPuzzle} name="puzzle icon" size="2xl"/> 
+  const mapIcon = <CoreUIIcon content={freeSet.cilMap} size="2xl" name="map icon"/>;
+  const graphIcon = <CoreUIIcon content={freeSet.cilGraph} size="2xl" name="graph icon"/>;
+  const mugIcon = <CoreUIIcon content={freeSet.cilCoffee} size="2xl" name="mug icon"/>;
+  const gamingControllerIcon = <CoreUIIcon content={freeSet.cilGamepad} size="2xl" name="gaming controller icon"/>;
+  const soccerBallIcon = <CoreUIIcon content={freeSet.cilSoccer} size="2xl" name="soccer ball icon"/>;
+  const keyboardIcon = <CoreUIIcon content={freeSet.cilKeyboard} size="2xl" name="keyboard icon"/>;
+  const headphonesIcon = <CoreUIIcon content={freeSet.cilHeadphones} size="2xl" name="headphones icon"/>;
+  const cpuIcon = <CoreUIIcon content={freeSet.cilMemory} size="2xl" name="CPU icon"/>;
+
   return (
     <>
     <SEO />
@@ -283,19 +130,21 @@ export default function Home() {
               {postgresIcon}
               {mysqlIcon}
               {sqliteIcon}
+              {mongoIcon}
           </div>
           </div>
           <div className="block">
             <h2>Web</h2>
             <div className="iconRow">
               {reactIcon}
+              {djangoIcon}
+              {flaskIcon}
+            </div>
+            <div className="iconRow">
+              {socketIcon}
               {gatsbyIcon}
               {nodeIcon}
               {jqueryIcon}
-            </div>
-            <div className="iconRow">
-              {flaskIcon}
-              {djangoIcon}
             </div>
             <div className="iconRow">
               {bootstrapIcon}

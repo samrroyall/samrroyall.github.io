@@ -18,7 +18,7 @@ export default function Footer(props) {
         </Link>
     )
     let githubIconLink = (
-        <a href="https://github.com/samrroyall/" target="_blank">
+        <a href="https://github.com/samrroyall/" target="_blank" rel="noreferrer">
             <CoreUIIcon content={brandSet.cibGithub} 
                 size="2xl" 
                 name="GitHub" 
@@ -26,7 +26,7 @@ export default function Footer(props) {
         </a>
     );
     let linkedInIconLink = (
-        <a href="https://www.linkedin.com/in/samrroyall" target="_blank">
+        <a href="https://www.linkedin.com/in/samrroyall" target="_blank" rel="noreferrer">
             <CoreUIIcon content={brandSet.cibLinkedin} 
                 size="2xl" 
                 name="linkedin" 
@@ -35,7 +35,7 @@ export default function Footer(props) {
         </a>
     );
     let angellistIconLink = (
-        <a href="https://angel.co/u/samrroyall" target="_blank">
+        <a href="https://angel.co/u/samrroyall" target="_blank" rel="noreferrer">
             <CoreUIIcon content={brandSet.cibAngellist} 
                 size="2xl" 
                 name="angellist" 
@@ -44,7 +44,7 @@ export default function Footer(props) {
         </a>
     );
     let leetcodeIconLink = (
-        <a href="https://leetcode.com/fjallraver/" target="_blank">
+        <a href="https://leetcode.com/fjallraver/" target="_blank" rel="noreferrer">
             <CoreUIIcon content={brandSet.cibLeetcode} 
                 size="2xl" 
                 name="leetcode" 

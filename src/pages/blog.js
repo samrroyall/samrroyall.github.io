@@ -153,14 +153,16 @@ export default function Blog() {
                     </>
                 }
             />
-            <Article 
-                id="searchArticle"
-                pos={1}
-                title="A Trie-based Search Algorithm for Soccer"
-                content={<p></p>}
-            />
         </main>
         <Footer currPage="blog/"/>
         </>
     );
 }
+
+
+// <Article 
+//     id="searchArticle"
+//     pos={1}
+//     title="A Trie-based Search Algorithm for Soccer"
+//     content={<p></p>}
+// />
