@@ -17,6 +17,8 @@ import tiberIcon from "../../static/icons/tiber-icon"
 import uchicagoIcon from "../../static/icons/uchicago-icon"
 // images
 import profilePicture from "../../static/images/profile-cropped.jpg" 
+// documents
+import resume from "../../static/docs/resume.pdf";
 
 export default function Home() {
   // language icons
@@ -78,7 +80,7 @@ export default function Home() {
                   Change the colorscheme in the page footer!
               </Link>
               <br /><br />
-              <span>Check out my <a href="https://www.overleaf.com/read/zqjpymktwhzf" target="_blank">resume</a>!</span>
+              <span>Check out my <a href={resume} target="_blank">resume</a>!</span>
             </span>
           </div>
         }

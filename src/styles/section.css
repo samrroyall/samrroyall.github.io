@@ -42,7 +42,7 @@ section a { color: var(--light-color); }
     min-height: 5vh;
     padding: 7vh 0;
 }
-.sectionTitle a:hover { color: var(--text-color); }
+.sectionTitle a:hover { color: var(--light-color); }
 .sectionTitle a {
     padding: 0 5px;
     display: inline;
