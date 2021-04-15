@@ -1,11 +1,11 @@
-import React from "react"
-import "../styles/Article.css"
+import React from "react";
+import "../styles/Article.css";
 
-let Article = (props) => (
-    <article className={(props.pos === 0 ? "mostRecentPost" : "")} id={props.id}>
-        <h2>{props.title}</h2>
-        <div>{props.content}</div>
+const Article = ({pos, id, title, content}) => (
+    <article className={(pos === 0 ? "mostRecentPost" : "")} id={id}>
+        <h2>{title}</h2>
+        <div>{content}</div>
     </article>
 );
 
-export default Article
+export default Article;

@@ -2,29 +2,13 @@ import React from "react"
 import themes from "../../static/themes"
 import "../styles/ThemePicker.css"
 
-class ThemePicker extends React.Component {
-    constructor(props) {
-        super(props);
-        // `document` error check must be available for deployment
-        let currTheme;
-        if (typeof document !== `undefined` ) {
-            currTheme = document.documentElement.style.getPropertyValue("--theme");
-        } else {
-            // default theme is alpine
-            currTheme = "retro";
-        }
-        this.state = { theme: currTheme };
-        this.changeTheme = this.changeTheme.bind(this);
-    }
-
-    changeTheme(e) {
+const ThemePicker = () => {
+    const changeTheme = e => {
         let newTheme = e.target.value; 
         if (newTheme === "") return;
         // `document` error check must be available for deployment
         if (typeof document !== `undefined`) {
-            this.setState({theme: newTheme});
             let colorVals = themes[newTheme]; // get new theme's color values
-
             // set CSS vars with new color values
             document.documentElement.style.setProperty("--theme", newTheme);
             document.documentElement.style.setProperty("--primary-color", colorVals.primary);
@@ -39,21 +23,16 @@ class ThemePicker extends React.Component {
         }
     }
 
-    render() {
-        let options = [];
-        let sortedThemes = Object.keys(themes).sort()
-        for (let i = 0; i < sortedThemes.length; i++) {
-            let theme = sortedThemes[i];
-            let option = <option key={i+1} value={theme}>{theme.replaceAll("-"," ")}</option>;
-            options.push(option);
-        }
-        return (
-            <select id="themeDropdown" onChange={(e) => this.changeTheme(e)}>
-                <option key={0} value="" />
-                {options}
-            </select>
-        );
-    }
+    const options = Object.keys(themes).sort().map((theme, idx) => (
+        <option key={idx} value={theme}>{theme.replaceAll("-"," ")}</option>
+    ));
+
+    return (
+        <select id="themeDropdown" onChange={e => changeTheme(e)}>
+            <option key={0} value="" />
+            {options}
+        </select>
+    );
 }
 
 export default ThemePicker;

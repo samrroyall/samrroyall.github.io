@@ -1,13 +1,13 @@
 import React from "react"
 import { CIcon } from '@coreui/icons-react'
 
-let CoreUIIcon = (props) => (
-    <span title={props.title} aria-label={props.name}>
+const CoreUIIcon = ({title, name, content, size}) => (
+    <span title={title} aria-label={name}>
         <CIcon 
-            content={props.content} 
-            size={props.size}
+            content={content} 
+            size={size}
         />
     </span>
 );
 
-export default CoreUIIcon
+export default CoreUIIcon;

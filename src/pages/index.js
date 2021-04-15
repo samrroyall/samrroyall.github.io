@@ -110,8 +110,7 @@ export default function Home() {
       <Section 
         pos={2}
         title="Skills" 
-        content={
-          <>
+        content={<>
           <div className="block">
             <h2>Languages</h2>
             <div className="iconRow">
@@ -154,8 +153,7 @@ export default function Home() {
               {cssIcon}
             </div>
           </div>
-          </>
-        }
+        </>}
       />
       <Section 
         pos={3} 

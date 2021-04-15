@@ -1,13 +1,13 @@
-import React from "react"
-import Highlight, {defaultProps} from "prism-react-renderer"
+import React from "react";
+import Highlight, {defaultProps} from "prism-react-renderer";
 import "../styles/CodeBlock.css";
 
-export default function CodeBlock(props) {
+const CodeBlock = ({code, language, theme}) => {
     return (
         <Highlight {...defaultProps} 
-            code={props.code} 
-            language={props.language}
-            theme={props.theme}>
+            code={code} 
+            language={language}
+            theme={theme}>
             {({ className, style, tokens, getLineProps, getTokenProps }) => (
                 <pre className={className} style={style}>
                     {tokens.map((line, i) => (
@@ -23,3 +23,5 @@ export default function CodeBlock(props) {
         </Highlight>
     );
 }
+
+export default CodeBlock;

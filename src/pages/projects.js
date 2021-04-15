@@ -23,11 +23,7 @@ export default function Projects() {
   let awsIcon = <CoreUIIcon content={brandSet.cibAmazonAws} size="2xl" name="AWS logo" title="AWS"/>;
   const socketIcon = <CoreUIIcon content={brandSet.cibSocketIo} name="socket.io logo" title="socket.io" size="2xl"/>;
   const mongoIcon = <CoreUIIcon content={brandSet.cibMongodb}  name="mongo logo" title="mongoDB" size="2xl"/>;
-  let sqliteIcon = (
-    <span id="sqliteIconLg" title="sqlite" aria-label="sqlite logo">
-      {sqlite}
-    </span>
-  );
+  let sqliteIcon = <span id="sqliteIconLg" title="sqlite" aria-label="sqlite logo">{sqlite}</span>;
   let reactIcon = <CoreUIIcon content={brandSet.cibReact} size="2xl" name="react logo" title="react"/>;
   let nodeIcon = <CoreUIIcon content={brandSet.cibNodeJs} size="2xl" name="node.js logo" title="node.js"/>;
   let typescriptIcon = <CoreUIIcon content={brandSet.cibTypescript} size="2xl" name="typescript logo" title="typescript"/>;

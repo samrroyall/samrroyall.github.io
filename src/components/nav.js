@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import "../styles/Nav.css"
 
-let Nav = (props) => (
+const Nav = props => (
     <nav>
         <ul>
             <li><Link to="/" id="brand">Sam Royall</Link></li>
@@ -12,4 +12,4 @@ let Nav = (props) => (
     </nav>
 );
 
-export default Nav
+export default Nav;
