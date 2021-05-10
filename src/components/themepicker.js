@@ -24,7 +24,7 @@ const ThemePicker = () => {
     }
 
     const options = Object.keys(themes).sort().map((theme, idx) => (
-        <option key={idx} value={theme}>{theme.replaceAll("-"," ")}</option>
+        <option key={idx} value={theme}>{theme.replace("-"," ")}</option>
     ));
 
     return (
